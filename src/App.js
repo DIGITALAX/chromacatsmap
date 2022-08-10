@@ -5,7 +5,8 @@ import './App.css';
 import mapLocations from './assets/mapLocations.json';
 import {Icon} from 'leaflet';
 
-import chromaIcon from './assets/icons/markerchroma.png'
+import chromaIcon from './assets/icons/markerchroma.png';
+import MarkerInfo from './components/MarkerInfo';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     popupAnchor: [-3, -76],
   });
 
+  const [clickedMarker, setClickedMarker] = useState(null);
 
   const DraggableMarker = () => {
     const [position, setPosition] = useState([0,0]);
@@ -49,6 +51,10 @@ function App() {
   return (
     <div className="App">
 
+    
+    <MarkerInfo clickedMarker={clickedMarker} />
+
+
     <MapContainer center={[0, 0]} zoom={1} scrollWheelZoom={true} maxBounds={[[-90,180],[90,-180]]}>
         <TileLayer
 
@@ -65,6 +71,11 @@ function App() {
             position={[item.latitude, item.longitude]}
             key={item.id}
             icon={markerPointer}
+            eventHandlers={{
+              click(e) {
+                setClickedMarker(item)
+              }
+            }}
             >
               <Popup
               closeOnClick={true}
