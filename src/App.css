@@ -24,6 +24,10 @@ html {
   color: #E7B805;
 }
 
+.leaflet-container a.leaflet-popup-close-button {
+  color: #E7B805;
+}
+
 .leaflet-popup-tip {
   background: #BA180A;
 }
