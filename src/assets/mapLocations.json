@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "Chromarket",
+        "description": "Welcome to the Chroma Hotel! Grand re-opening tonight. Don’t be late.",
+        "latitude": 72.16117632249036,
+        "longitude": -68.20312500000001
+    },
+    {
+        "id": "2",
+        "name": "The Commons",
+        "description": "Web 3 cyber cafes. Coffee served 24/7. You’re welcome. Discover hidden games. Lofi Jams. CC0punks welcome...",
+        "latitude": 52.904596561289175,
+        "longitude": -0.703125
+    },
+    {
+        "id": "3",
+        "name": "Mouth Slide",
+        "description": "Disclaimer: Chroma Inc. is not responsible for what happens to any individuals who willingly choose to use the Mouth Slide. That being said; it’s the fastest way to get to the surface of the Earth below!",
+        "latitude": 26.45120302240597,
+        "longitude": 46.40625000000001
+    },
+    {
+        "id": "4",
+        "name": "Floatown",
+        "description": "We all float here! Discover hidden art galleries and claimable pieces.",
+        "latitude": 69.88447206606486,
+        "longitude": 97.73437500000001
+    },
+    {
+        "id": "5",
+        "name": "Longbridge",
+        "description": "Longbridge has 1,999 step, plan accordingly. Longbridge will take you to the Observatorium. Have fun!",
+        "latitude": -37.08987961993573,
+        "longitude": -24.609375000000004
+    },
+    {
+        "id": "6",
+        "name": "???",
+        "description": "???",
+        "latitude": -73.11218309488552,
+        "longitude": 26.367187500000004
+    }
+]
