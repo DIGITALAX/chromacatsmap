@@ -78,6 +78,7 @@ html {
 .leaflet-top .leaflet-control {
   margin-top: 50px;
   margin-left: 20px;
+  padding: 10px;
 }
 
 .logo {
