@@ -25,7 +25,7 @@ function MarkerInfo(props) {
         <FaWindowClose
         color="#E7B805"
         className="close"
-        style={{textAlign:"center", display: "flex", alignItems:"center", justifyContent:"center"}} />
+        />
         </div>
         </div>
       </Draggable>
