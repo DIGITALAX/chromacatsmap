@@ -108,11 +108,6 @@ html {
   .markerInfo {
     width: fit-content;
   }
-
-  /* .leaflet-container  {
-    position: absolute;
-    top: 0px;
-  } */
 }
 
 
@@ -154,4 +149,26 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.enterButton {
+  font-family: 'LoRes';
+  color:#BA180A;
+  background:#E7B805;
+  border: none;
+  width: 30%;
+  height: 30px;
+  margin-top: 0.5rem;
+}
+
+.enterButton:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+@media (max-width: 780px) { 
+  .enterButton {
+    width: fit-content;
+  }
 }
