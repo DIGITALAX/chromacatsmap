@@ -11,6 +11,8 @@ function Cafe() {
   const [classNameCouch7, setClassNameCouch7] = useState("couch7");
   const [classNameCouch8, setClassNameCouch8] = useState("couch8");
   const [classNameCouch9, setClassNameCouch9] = useState("couch9");
+  const [classNameDoor, setClassNameDoor] = useState("couch7");
+  const [classNameDoor1, setClassNameDoor1] = useState("couch4");
 
   return (
     <div className="cafe">
@@ -1859,38 +1861,38 @@ function Cafe() {
           <Link to="/mint">
             <path
               onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
               className={classNameCouch3}
               d="M783.28,838.27L783.28,838.27c0.41,0.28,0.82,0.53,1.23,0.76C784.1,838.8,783.69,838.55,783.28,838.27z"
             />
@@ -5881,9 +5883,22 @@ function Cafe() {
             d="M321.18,574.68c0.71,0.2,1.42,0.4,2.12,0.59c-0.48-0.14-0.97-0.27-1.45-0.41
 		C321.63,574.8,321.4,574.74,321.18,574.68z"
           />
-          <path
-            className="st5"
-            d="M293.62,558.95c-0.32-1.21-0.54-2.44-0.79-3.67c-0.6,27.25-0.02,54.42,3.26,81.92
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor}
+              d="M293.62,558.95c-0.32-1.21-0.54-2.44-0.79-3.67c-0.6,27.25-0.02,54.42,3.26,81.92
 		c1.45-0.79,2.28-1.21,3.09-1.68c12.66-7.2,25.46-14.18,37.93-21.69c2.6-1.57,5.18-3.17,7.74-4.81c2.56-1.63,5.11-3.29,7.65-4.96
 		c5.08-3.34,10.14-6.72,15.23-10.03c-6.72-2.71-13.46-5.37-20.17-8.11c-2.24-0.91-4.47-1.83-6.7-2.77
 		c-2.97-1.25-5.91-2.57-8.84-3.91c-2.93-1.34-5.85-2.71-8.78-4.04c0,0,0.03,0.03,0.04,0.05c0,0.01,0.01,0.02,0.01,0.02
@@ -5901,7 +5916,8 @@ function Cafe() {
 		c-3.93-1.36-7.87-2.72-11.8-4.08c6.42,3.04,12.84,6.09,19.27,9.13c-0.05,0.19-0.09,0.37-0.14,0.56c-2.91-1.03-5.86-1.93-8.71-3.11
 		c-11.52-4.75-23.02-9.57-34.49-14.44c-0.46-0.19-0.85-0.54-1.23-0.92c-0.38-0.38-0.74-0.81-1.12-1.16
 		c-2.59-0.91-5.18-1.81-7.78-2.72C315.7,558.66,315.85,558.25,316.01,557.84z"
-          />
+            />
+          </Link>
           <path
             className="st9"
             d="M643.76,217.37c1.16,0.94,2.84,1.73,4.3,1.76c8.35,0.16,16.7-0.02,25.05,0.1c7.61,0.11,15.21,0.41,22.81,0.73
@@ -5989,9 +6005,22 @@ function Cafe() {
 		c0.75-2.35,1.64-4.67,2.44-7.01v0c-0.13,0.05-0.27,0.09-0.41,0.13c-0.41,0.13-0.83,0.24-1.19,0.46
 		c-9.97,6.07-19.93,12.15-29.89,18.23c-0.1,0.51-0.19,1.03-0.29,1.54C558.31,793.97,557.9,796.01,557.54,798.06z"
           />
-          <path
-            className="st5"
-            d="M358.74,403.35c-2.54,0.81-4.93,1.7-7.01,3.33c-0.7,0.54-1.36,1.17-1.98,1.9c-4.13,4.84-8.6,9.43-16.13,7.08
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor}
+              d="M358.74,403.35c-2.54,0.81-4.93,1.7-7.01,3.33c-0.7,0.54-1.36,1.17-1.98,1.9c-4.13,4.84-8.6,9.43-16.13,7.08
 		c-0.97-0.3-2.84,0.62-3.58,1.54c-5.53,6.86-9.4,8.05-17.25,4.83c-5.25,5.41-9.14,13.1-18.6,12.2c-1.42,7.85,2.87,17.29-6.75,21.52
 		c0.29,1.71,0.62,2.93,0.68,4.16c0.51,10.43,0.99,20.86,1.44,31.29c0.5,11.39,0.93,22.79,1.47,34.18c0.15,3.18,0.56,6.35,0.91,10.1
 		c22.08-13.64,43.83-27.08,65.83-40.67c-0.08-0.26-0.16-0.53-0.24-0.81c-0.25-0.84-0.52-1.77-0.79-2.69
@@ -6014,7 +6043,8 @@ function Cafe() {
 		c0.47,0.19,0.93,0.38,1.4,0.57c0.65,0.4,1.31,0.8,1.96,1.2c-0.16,0.3-0.32,0.61-0.48,0.91c-3.81-1.89-7.62-3.78-11.44-5.67
 		l0.05,0.03c0,0,0,0,0,0l0,0c-5.35-2.35-10.7-4.71-16.05-7.06c0.12-0.34,0.24-0.68,0.36-1.02c0.68,0.09,1.35,0.17,2.03,0.26
 		c0.46-0.13,1.05-0.52,1.37-0.36C359.3,423.54,366.01,426.91,372.7,430.31z"
-          />
+            />
+          </Link>
           <path
             className="st3"
             d="M76.06,824.4c0.01,0.48,0.04,0.95,0.08,1.43c0.93,11.53,1.87,23.06,2.77,34.59c0.38,4.77,0.68,9.55,1.04,14.77
@@ -6549,9 +6579,22 @@ function Cafe() {
 		c3.42,0.46,6.25,1.86,7.93,5.05c0.18,0.11,0.35,0.23,0.53,0.34c0.54,0.35,1.07,0.7,1.61,1.05
 		C591.28,737.78,601.4,727.57,611.44,717.29z"
           />
-          <path
-            className="st4"
-            d="M308.07,480.93c-0.15,0.39-1.52,0.33-2.68,0.54c1.33,8.48,2.73,17.47,4.17,26.7c2.18-1.47,3.76-2.7,5.48-3.68
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor1}
+              d="M308.07,480.93c-0.15,0.39-1.52,0.33-2.68,0.54c1.33,8.48,2.73,17.47,4.17,26.7c2.18-1.47,3.76-2.7,5.48-3.68
 		c5.98-3.42,12-6.76,18.01-10.11c3.47-1.93,6.98-3.8,10.44-5.75c5.45-3.08,10.87-6.2,16.3-9.31c0-0.01,0-0.01,0-0.02
 		c-1.02,0.18-2.04,0.36-3.25,0.57c-2.05-1.78-0.98-3.19,0.68-4.77c1.47-1.41,2.66-3.1,4.25-4.99c-3.36-1.62-5.8-2.8-8.4-4.05
 		c1.56-2.2,2.63-3.72,4.11-5.81c-2.16-0.19-3.82-0.33-6.18-0.54c0.48-1,0.81-2.48,1.29-2.53c1.87-0.2,4.42-0.68,5.57,0.3
@@ -6568,7 +6611,8 @@ function Cafe() {
 		c0.35-2.24,1.5-4.35,2.36-6.7c4.11-0.61,4.61,1.6,4.63,4.84c-1.24-1.02-2.18-1.79-3.13-2.57c-3.33,5.78-2.33,11.43,2.96,16.19
 		c0.98-0.46,2.02-0.95,4.09-1.93c-0.24,1.7-0.01,3.14-0.61,3.76c-1.4,1.44-3.38,2.83-5.22,0.81
 		C311.96,495.13,309.68,490.38,310.56,484.76z"
-          />
+            />
+          </Link>
           <path
             className="st13"
             d="M786.79,627.06c-1.52,1.01-3.03,2.04-4.65,2.86c-14.61,7.48-29.27,14.89-43.91,22.32
@@ -6724,11 +6768,25 @@ function Cafe() {
 		c4.73-2.91,9.46-5.82,14.19-8.72c0.05-0.04,0.09-0.08,0.14-0.12c0.19-0.17,0.39-0.33,0.58-0.5
 		C642.14,732.75,642.86,730.37,643.58,728z"
           />
-          <path
-            className="st5"
-            d="M301.34,554.74c28.24-19.09,57.6-35.43,86.72-51.03c0-4.21,0-7.69,0-11.61
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor}
+              d="M301.34,554.74c28.24-19.09,57.6-35.43,86.72-51.03c0-4.21,0-7.69,0-11.61
 		c-29.49,17.1-58.49,33.92-87.68,50.85C300.67,546.52,300.97,550.23,301.34,554.74z"
-          />
+            />
+          </Link>
           <path
             className="st5"
             d="M317.76,818.02c-0.78-1.01-1.34-1.73-2.41-3.11c0.64,2.59,1.14,4.35,1.52,6.14
@@ -7437,12 +7495,26 @@ function Cafe() {
 		c-1.12-4.15-2.4-8.9-3.58-13.25c-0.4,1.9-0.86,4.14-1.33,6.37c-0.63-0.05-1.26-0.11-1.89-0.16c-2.03-13.04,0.84-26.2,0.09-39.27
 		c-0.75-0.72-1.51-1.43-2.26-2.15C837.48,277.26,837.25,277.23,837.03,277.2z"
           />
-          <path
-            className="st5"
-            d="M296.72,539.39c1.69-0.3,3.41-0.91,4.91-1.75c6.09-3.38,12.12-6.89,18.16-10.38
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor}
+              d="M296.72,539.39c1.69-0.3,3.41-0.91,4.91-1.75c6.09-3.38,12.12-6.89,18.16-10.38
 		c17.73-10.22,35.47-20.42,53.15-30.73c1.98-1.15,3.37-3.37,5.38-4.4c3.66-1.87,7.58-3.21,11.96-5c-1.82-0.97-2.92-1.56-3.96-2.12
 		c-31.97,15.56-62.04,34.06-91.86,53.48C294.94,538.71,295.92,539.53,296.72,539.39z"
-          />
+            />
+          </Link>
           <path
             className="st5"
             d="M211.38,869.14c0.72-3.15,1.43-6.31,2.15-9.46h0l0,0c-2.6-0.22-5.2-0.44-7.8-0.65c-0.15,0.2-0.3,0.4-0.44,0.61
@@ -7955,11 +8027,25 @@ function Cafe() {
 		C73.53,748.94,70.14,747.48,66.54,747.97z M69.24,751.91c0.48,1-0.69,2.8-1.12,4.25c-0.56,0.02-1.12,0.04-1.68,0.06
 		c-0.93-1.89-1.87-3.79-2.98-6.04C66.53,748.75,68.37,750.11,69.24,751.91z"
           />
-          <path
-            className="st5"
-            d="M337.15,446.02c-2.13,0.67-4.12,1.29-6.64,2.08c-5.01,6.91-10.53,14.5-16.04,22.1c0.2,0.19,0.4,0.38,0.59,0.58
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("click");
+              }}
+              className={classNameDoor}
+              d="M337.15,446.02c-2.13,0.67-4.12,1.29-6.64,2.08c-5.01,6.91-10.53,14.5-16.04,22.1c0.2,0.19,0.4,0.38,0.59,0.58
 		c12.12-7.5,24.24-14.99,36.52-22.6C346.36,447.4,341.61,446.68,337.15,446.02z"
-          />
+            />
+          </Link>
           <path
             className="st16"
             d="M680.31,446.22c-4.26,0.27-8.3-0.6-10.89,3.25c0.61,3.61,3.77,2.22,6.82,2.98c-3.03,3.01-5.58,5.55-8.14,8.08
@@ -8007,11 +8093,25 @@ function Cafe() {
 		c-0.35,0.08-0.71,0.16-1.06,0.24c-0.96-3.38-1.92-6.77-2.88-10.15c-0.52,0-1.04-0.01-1.56-0.01c-0.68,3.8-1.35,7.6-2.22,12.47
 		c4.74-1.02,8.55-1.84,12.38-2.67C139.24,694.77,139.38,686.55,132.05,681.33z"
           />
-          <path
-            className="st5"
-            d="M369.81,536.3c4.7-1.83,8.8-3.43,12.61-4.91c-0.74-6.45-1.44-12.51-2.18-18.9c-4.79,2.8-9.55,5.57-14.66,8.56
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor}
+              d="M369.81,536.3c4.7-1.83,8.8-3.43,12.61-4.91c-0.74-6.45-1.44-12.51-2.18-18.9c-4.79,2.8-9.55,5.57-14.66,8.56
 		C366.94,525.96,368.31,530.89,369.81,536.3z"
-          />
+            />
+          </Link>
           <path
             className="st7"
             d="M904.85,291.69c0.6,0.8,1.5,1.37,2.26,2.05c-0.56-3.69-1.51-7.18-2.81-10.46c-0.43-1.09-0.9-2.17-1.4-3.21
@@ -9202,11 +9302,25 @@ function Cafe() {
 		c-1.27-0.52-2.38-0.97-3.48-1.42c-0.27,0.31-0.54,0.62-0.8,0.93c0.79,0.91,1.41,2.12,2.39,2.67c6.59,3.67,13.25,7.23,19.94,10.71
 		c0.39,0.2,0.88,0.21,1.39,0.17c0.51-0.04,1.06-0.13,1.55-0.14C289.66,743.65,286.57,741.89,284.38,739.35z"
           />
-          <path
-            className="st5"
-            d="M374.62,485.61c0.24-1.66,0.46-3.13,0.76-5.19c-5.93,2.65-11.41,5.11-17.02,7.62c0.87,2,1.6,3.71,2.46,5.7
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor}
+              d="M374.62,485.61c0.24-1.66,0.46-3.13,0.76-5.19c-5.93,2.65-11.41,5.11-17.02,7.62c0.87,2,1.6,3.71,2.46,5.7
 		C365.6,490.92,370.14,488.24,374.62,485.61z"
-          />
+            />
+          </Link>
           <path
             className="st16"
             d="M765.93,234.15c-6.29-0.42-12.54-1.55-18.79-2.38c0,1.14,0,2.42,0,3.62c10.81,0.51,21.54,1.02,32.36,1.54
@@ -9753,11 +9867,25 @@ function Cafe() {
 		c-0.49-3.33-0.96-6.48-1.43-9.63c-0.39-0.04-0.78-0.07-1.17-0.11c-0.7,1.3-1.39,2.59-2.11,3.93
 		C353.75,378.46,351.82,381.54,351.32,384.36z"
           />
-          <path
-            className="st5"
-            d="M382.64,510.7c0.51,3.87,1,7.54,1.48,11.13c2.15-0.18,3.86-0.33,5.7-0.48c-1.27-4.38-2.47-8.52-3.75-12.93
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor}
+              d="M382.64,510.7c0.51,3.87,1,7.54,1.48,11.13c2.15-0.18,3.86-0.33,5.7-0.48c-1.27-4.38-2.47-8.52-3.75-12.93
 		C384.66,509.35,383.79,509.93,382.64,510.7z"
-          />
+            />
+          </Link>
           <path
             className="st11"
             d="M710.12,389.98c0.28,1.84,0.56,3.69,0.91,5.94c1.62-1.01,2.57-1.6,3.53-2.2c-0.32-0.08-0.65-0.16-0.97-0.24
@@ -10541,11 +10669,25 @@ function Cafe() {
 		c-0.17,0.25-0.35,0.5-0.54,0.75c-0.74,0.97-1.56,1.87-2.42,2.75c-0.01,0.01-0.02,0.02-0.03,0.03c-0.65,0.66-1.32,1.32-1.97,1.97
 		C1054.25,474.99,1056,474.3,1057.75,473.6z"
           />
-          <path
-            className="st5"
-            d="M358.55,529.96c2.2-0.5,4.2-0.95,6.25-1.41c-0.57-2.33-1.02-4.14-1.51-6.13c-1.87,1.11-3.29,1.95-4.74,2.82
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor}
+              d="M358.55,529.96c2.2-0.5,4.2-0.95,6.25-1.41c-0.57-2.33-1.02-4.14-1.51-6.13c-1.87,1.11-3.29,1.95-4.74,2.82
 		C358.55,526.83,358.55,528.33,358.55,529.96z"
-          />
+            />
+          </Link>
           <path
             className="st16"
             d="M877.17,415.12c3.53-1.2,7.05-2.39,10.72-3.64c-0.61-1.7-1.13-3.16-1.7-4.74c-3.38,2.9-6.29,5.38-9.2,7.87
@@ -10738,11 +10880,25 @@ function Cafe() {
 		c1.49-0.61,2.98-1.22,4.58-1.88c-0.75-1.43-1.47-2.81-2.5-4.76c-0.18,2.19-0.29,3.6-0.4,5.01
 		C803.56,443.36,803.31,443.38,803.06,443.41z"
           />
-          <path
-            className="st5"
-            d="M294.6,541.65c0.6,5.6,1.05,9.9,1.51,14.19c0.42-0.01,0.85-0.01,1.27-0.02c0-3.99,0.08-7.99-0.09-11.98
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor}
+              d="M294.6,541.65c0.6,5.6,1.05,9.9,1.51,14.19c0.42-0.01,0.85-0.01,1.27-0.02c0-3.99,0.08-7.99-0.09-11.98
 		C297.27,543.27,296.01,542.75,294.6,541.65z"
-          />
+            />
+          </Link>
           <path
             className="st9"
             d="M845.45,368.68c0.43-9.31,0.11-10.26-3.76-10.86c0.49,2.21,0.88,4.18,1.36,6.12c0.42,1.69,0.95,3.34,1.44,5.01
@@ -10789,11 +10945,25 @@ function Cafe() {
             d="M136.28,811.91c0.29,4.07,0.56,7.87,0.88,12.29c3.53-3.95,1.11-8.22,2.41-12.44
 		C138.03,811.83,137.26,811.87,136.28,811.91z"
           />
-          <path
-            className="st3"
-            d="M395.73,566.34c3.56,1.97,1.54,5.39,2.05,8.2c0.95-0.56,1.9-1.12,2.34-1.39c-0.63-3.88-1.18-7.29-1.74-10.7
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor1}
+              d="M395.73,566.34c3.56,1.97,1.54,5.39,2.05,8.2c0.95-0.56,1.9-1.12,2.34-1.39c-0.63-3.88-1.18-7.29-1.74-10.7
 		c-0.6-0.54-1.21-1.09-1.85-1.66C396.25,562.78,396,564.5,395.73,566.34z"
-          />
+            />
+          </Link>
           <path
             className="st15"
             d="M583.02,483.91c0.47-0.19,0.93-0.37,1.4-0.56c-0.21-1.07-0.26-2.2-0.67-3.19c-0.73-1.77-1.68-3.46-2.54-5.18
@@ -11279,10 +11449,24 @@ function Cafe() {
             d="M804.78,642.13c0.47-0.31,0.94-0.63,1.42-0.94c1.43-0.95,2.9-1.93,4.56-3.03c-0.93-0.46-1.81-0.89-2.68-1.32
 		c-0.87-0.43-1.71-0.84-2.56-1.26C805.27,637.77,805.02,639.95,804.78,642.13z"
           />
-          <path
-            className="st5"
-            d="M390.6,490.72c0.51,3.33,1.02,6.67,1.61,10.57C394.04,497.13,393.77,494.63,390.6,490.72z"
-          />
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor}
+              d="M390.6,490.72c0.51,3.33,1.02,6.67,1.61,10.57C394.04,497.13,393.77,494.63,390.6,490.72z"
+            />
+          </Link>
           <path
             className="st5"
             d="M789.94,237.53c-1.95-2.39-4.49-2.59-7.96-2.29C784.26,239.37,787.43,237.22,789.94,237.53z"
@@ -12569,38 +12753,38 @@ function Cafe() {
           <Link to="/mint">
             <path
               onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
               className={classNameCouch}
               d="M898.26,670.19c-3.6,3.35-5.47,8.55-8.07,12.81c-2.39-1.88-5.13-4.32-8.14-6.35
 		c-6.55-4.43-13.75-7.99-21.56-8.7c-8.59-0.78-15.6,3.33-20.55,10.56c-0.61,1.83-1.21,3.66-1.72,5.18
@@ -12920,46 +13104,46 @@ function Cafe() {
 		c4.74-1.02,9.54-2.33,13.89-4.4C92.73,918.07,92.8,913.49,89.71,911.95z M70.94,920.78c3.15-4.97,11.68-7,17.84-6.2
 		C86.99,919.6,75.44,923.74,70.94,920.78z"
           />
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M1014.81,841.17c4.06-2.51,7.05-11.81,5.56-17.32c-2.55,4.12-5.09,8.24-7.49,12.11
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M1014.81,841.17c4.06-2.51,7.05-11.81,5.56-17.32c-2.55,4.12-5.09,8.24-7.49,12.11
 		C1013.54,837.77,1014.18,839.47,1014.81,841.17z"
-          />
-		  </Link>
+            />
+          </Link>
           <path
             className="st2"
             d="M91.31,897.7c-3.42,0.83-5.38,3.7-4.89,7.13c3.59,1.39,8.97-0.05,11.1-2.97
@@ -12972,46 +13156,46 @@ function Cafe() {
 		c2.18-1.66,2.13-5.05,0.1-7.2c-0.63-0.66-1.45-1.13-2.18-1.69c-1.42,1.13-2.85,2.26-4.27,3.39
 		C911.86,1021.91,913.39,1021.93,913.97,1022.68z"
           />
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M1011.11,791.7c-1.39-3.6-2.79-7.19-4.18-10.79c-0.47,2.81-0.94,5.61-1.42,8.5
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M1011.11,791.7c-1.39-3.6-2.79-7.19-4.18-10.79c-0.47,2.81-0.94,5.61-1.42,8.5
 		C1007.5,790.23,1009.3,790.97,1011.11,791.7z"
-          />
-		  </Link>
+            />
+          </Link>
           <path
             className="st2"
             d="M51.01,855.54c0.32,2.14,1.13,4.23,3.96,3.78c2.82-0.45,4.01-2.79,3.42-5.77c-0.35-1.76-0.64-3.69-0.27-5.4
@@ -14125,38 +14309,38 @@ function Cafe() {
           <Link to="/mint">
             <path
               onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
               className={classNameState}
               d="M811.84,745.05c-2.87,5.53-5.54,11.71-6.05,17.78c-0.82,9.77,2.61,19.07,7.69,27.45
 		c1.79,2.95,4.78,5.17,6.75,7.22c2.53-2.3,4.06-4.37,6.11-5.37c2.69-1.31,5.8-1.76,8.73-2.6c8.3-2.37,16.59-4.76,24.89-7.14
@@ -14184,38 +14368,38 @@ function Cafe() {
           <Link to="/mint">
             <path
               onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
               className={classNameState}
               d="M946.7,777.27c-0.27-0.65-0.5-1.33-0.75-2c-0.25-0.66-0.53-1.31-0.92-1.88c-4.69-6.92-10.86-11.95-18.6-15.32
 		c-5.02-2.19-9.67-2.04-14.15,0.67c-3.3,2-6.32,4.49-9.39,6.85c-6.35,4.88-12.59,9.92-19.03,14.68c-2.21,1.63-4.87,2.64-7.29,3.9
@@ -14243,38 +14427,38 @@ function Cafe() {
           <Link to="/mint">
             <path
               onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
               className={classNameCouch4}
               d="M994.13,781.34c-4.51,2.22-9.65,3.17-14.12,4.54c-5.03,11.31-8.02,12.53-17.99,11.72
 		c-3.27,5.58-8.21,6.56-12.98,5.01c-3.77,3.19-6.96,5.85-10.08,8.59c-0.68,0.6-1.27,1.43-1.58,2.27c-1.43,3.87-3.91,6.81-7.78,8.21
@@ -14294,38 +14478,38 @@ function Cafe() {
           <Link to="/mint">
             <path
               onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
               className={classNameState}
               d="M818.97,867.38c0.15-0.88,0.06-1.89,0.48-2.58c2.06-3.36,3.02-6.91,2.41-10.84c-1.33-0.96-2.67-1.91-4-2.87
 		c0.14-0.44,0.28-0.87,0.42-1.31c1.25-0.49,2.5-0.99,3.74-1.48c0,0.01,0,0.02,0,0.03c2.53-0.38,5.06-0.95,7.6-1.01
@@ -14341,88 +14525,88 @@ function Cafe() {
 		C828.64,831.13,832.77,826.98,836.97,822.9z"
             />
           </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M783.28,838.27c-0.2-0.93-0.4-1.87-0.64-2.97c-0.08-0.37-0.16-0.76-0.25-1.17c1.33-0.56,2.56-1.48,3.83-1.53
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M783.28,838.27c-0.2-0.93-0.4-1.87-0.64-2.97c-0.08-0.37-0.16-0.76-0.25-1.17c1.33-0.56,2.56-1.48,3.83-1.53
 		c2.74-0.11,5.14-0.82,7.33-1.9c0.73-0.36,1.44-0.76,2.12-1.2c0.34-0.22,0.68-0.44,1.02-0.68c2.35-1.63,4.5-3.62,6.65-5.61
 		c-1.69-3.74-4.27-6.29-7.28-8.3c-3.87-2.58-8.44-4.27-12.69-6.42c5.19-1.7,9.59,0.3,14.45,1.7c3.24-2.93,7.09-5.32,12.02-4.99
 		c-1.38-2.31-2.75-4.62-4.64-7.78c2.25,0,4.14,0,6.03,0c-0.04-0.07-0.08-0.14-0.12-0.21c-0.03-0.05-0.06-0.11-0.09-0.16
 		c-0.17-0.32-0.34-0.68-0.51-1.01c-0.06-0.12-0.12-0.23-0.18-0.33c-0.1-0.17-0.2-0.33-0.31-0.46c-0.16-0.19-0.33-0.33-0.53-0.4
 		c-10.66-3.93-20.78-3.53-29.09,5.3c-9.87,10.48-13.09,23.02-8.34,38.13C775.81,838.27,779.54,838.27,783.28,838.27
 		C783.28,838.27,783.28,838.27,783.28,838.27L783.28,838.27C783.28,838.27,783.28,838.27,783.28,838.27z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M759.33,784.87c0.59-8.66,1.19-17.45,1.82-26.62c-1.73,0.96-3.34,1.86-4.94,2.75c0,0-0.04,0.04-0.04,0.04
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M759.33,784.87c0.59-8.66,1.19-17.45,1.82-26.62c-1.73,0.96-3.34,1.86-4.94,2.75c0,0-0.04,0.04-0.04,0.04
 		c-1.85,6.44-4.13,12.79-5.42,19.34c-1.36,6.91-1.96,13.99-2.56,21.02c-0.68,8.01-0.86,16.07-1.53,24.08
 		c-0.47,5.62,1.3,10.46,4.18,15.08c0.48,0.77,0.68,1.7,1.01,2.56c0,0,0.03,0.03,0.03,0.03c0.48,0.68,0.97,1.35,1.45,2.03
 		c0,0,0.08,0.05,0.08,0.05c0.34,0.35,0.68,0.71,1.02,1.06c1.96,1.38,3.92,2.76,5.88,4.14c3.59,0.91,7.11,1.65,8.75-3.04
@@ -14431,134 +14615,134 @@ function Cafe() {
 		c0.83-1.27,1.69-2.57,2.55-3.88c-0.47-1.17-0.88-2.37-1.33-3.55c-0.45-1.18-0.93-2.34-1.54-3.43c-2.52-4.47-6.15-8.32-11.37-8.61
 		c-6.32-0.35-11.68-2.4-16.73-5.92c-8.89-6.2-10.4-12.23-8.56-21.76c0.54-2.83,1.18-5.63,1.84-8.44s1.34-5.6,1.98-8.41
 		C758.62,795.21,758.97,790.06,759.33,784.87z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameState}
-            d="M788.76,788.7c6.16-2.08,12.44-1.25,18.73,0.51c-1.58-4.21-3.09-8.21-4.5-11.95
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameState}
+              d="M788.76,788.7c6.16-2.08,12.44-1.25,18.73,0.51c-1.58-4.21-3.09-8.21-4.5-11.95
 		c-0.47,1.39-1.01,2.95-1.54,4.52c-0.36,0.04-0.71,0.09-1.07,0.13c-0.66-1.11-1.65-2.14-1.91-3.33c-0.51-2.29-0.72-4.66-0.86-7.01
 		c-0.39-6.32-2.63-11.8-6.97-16.58c-2.32,1.05-4.43,2-6.7,3.03c7.35,5.88,11.06,22.07,5.57,24.88c-4.24-7.05-1.5-16.86-9.23-23.2
 		c-2.03,2.54-4.01,5.03-5.92,7.43c6.39,7.43,7.81,19.92,2.53,23.21c-1.4-6.28-2.76-12.4-4.13-18.53c-1.27,0.71-1.75,1.28-1.92,1.92
 		c-1.39,5.32-2.54,10.71-4.13,15.97c-1.12,3.73-2.99,7.22-4.2,10.93c-2.28,7.02-3.04,14.24-2.99,21.64c0,0.62,0.03,1.22,0.09,1.79
 		c0.42,4.02,2.24,6.92,6.02,8.9c0,0,0,0,0,0c0.11,0.42,0.23,0.84,0.34,1.26c0.28-0.26,0.56-0.53,0.84-0.79
 		c-0.23-0.31-0.46-0.63-0.69-0.94c-0.49-7.02,0.14-13.95,2.15-20.7C771.5,800.92,777.61,792.46,788.76,788.7z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M822.52,897.01c-0.66-2.92-1.7-5.52-3.16-7.8c-0.24-0.38-0.5-0.75-0.76-1.12c-0.53-0.73-1.1-1.42-1.73-2.08
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M822.52,897.01c-0.66-2.92-1.7-5.52-3.16-7.8c-0.24-0.38-0.5-0.75-0.76-1.12c-0.53-0.73-1.1-1.42-1.73-2.08
 		c-0.31-0.33-0.63-0.65-0.97-0.96c-0.67-0.62-1.38-1.21-2.14-1.77c-1.52-1.11-3.23-2.09-5.13-2.94c-3.01,3.15-5.99,6.27-7.95,8.32
 		c1.08,5.29,2.57,9.32,2.6,13.36c0.12,14.49-4.49,27.6-12.77,39.45c1.62,3.06,3.24,6.11,4.87,9.17c2.42-1.84,0.28-3.31-0.36-4.9
 		c-0.15-0.37-0.21-0.74-0.13-1.13c0.51-0.28,0.97-0.48,1.39-0.57c1.84-0.41,2.96,1.02,4.04,5.1c1.75-1.62,3.24-3.02,4.89-4.55
 		c-2.33-2.01-4.14-3.58-6.45-5.57c0.44-0.99,0.81-2.47,1.67-3.57c1.31-1.67,3.03-3.02,4.47-4.6c4.77-5.26,9.49-10.56,14.23-15.85
 		C820.27,909.01,821.39,903.01,822.52,897.01z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M942.22,670.04c-0.15,1.26-0.3,2.53-0.45,3.79c-0.15,1.27-0.3,2.54-0.45,3.83c-1.15,0-1.99,0-2.7,0
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M942.22,670.04c-0.15,1.26-0.3,2.53-0.45,3.79c-0.15,1.27-0.3,2.54-0.45,3.83c-1.15,0-1.99,0-2.7,0
 		c-0.43,0-0.81,0-1.19,0c0,0,0,0,0,0c0.87,0.9,1.8,1.74,2.6,2.7c6.47,7.76,8.45,17.05,9.59,26.8c0.6,5.1-0.25,10.62,3.42,15.2
 		c1.81,2.26,3.31,4.95,4.22,7.69c1.11,3.37,3.38,4.83,6.44,5.79c4.33,1.36,8.67,2.75,12.93,4.32c6,2.2,10.35,7.45,8.25,15.05
 		c-0.55,2-0.46,4.3-0.13,6.38c0.34,2.21,1.22,4.43,4.42,4.19c2.24-2.44,3.53-4.9,1.29-8.34c-1.59-2.44-2.71-5.28-0.69-8.19
@@ -14567,45 +14751,45 @@ function Cafe() {
 		c-3.93-5.69-6.02-11.88-7.42-18.81c-1.65-8.14-5.49-15.93-9.06-23.55c-0.18-0.39-0.39-0.76-0.62-1.12
 		C947.12,674.34,944.36,672.34,942.22,670.04z M953.62,705.36c4.01,3.27,2.93,6.75,2.89,10.42c-3.31-1.5-4.94-3.99-5.33-7.03
 		C951.05,707.78,952.68,706.59,953.62,705.36z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M805.18,719.17c-1.82,4.48-3.64,8.96-5.48,13.44c-0.75,1.82-1.79,3.52-2.98,5.83
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M805.18,719.17c-1.82,4.48-3.64,8.96-5.48,13.44c-0.75,1.82-1.79,3.52-2.98,5.83
 		c-1.45-1.11-2.48-1.91-3.52-2.7l0,0c-0.46,0.61-0.9,1.2-1.35,1.74c-0.14,0.17-0.28,0.33-0.42,0.48c-0.47,0.51-0.96,0.97-1.52,1.35
 		c-0.32,0.22-0.66,0.41-1.03,0.57c-1.1,0.49-2.45,0.72-4.23,0.59c-3.82-0.29-7.96,0.4-11.59,2.43c-0.91,0.51-1.78,1.09-2.61,1.77
 		c-0.28,0.23-0.55,0.46-0.81,0.71c3.04-0.07,6.08-0.21,9.12-0.17c0.55,0.01,1.09,0.7,2.26,1.51c-4.78,2.93-9.12,5.59-13.65,8.38
@@ -14614,130 +14798,130 @@ function Cafe() {
 		c-0.63,9.17-1.23,17.96-1.82,26.62c-0.36,5.19-0.71,10.34-1.06,15.48c1.16-3.27,2.47-6.49,3.46-9.81
 		c2.24-7.48,3.49-15.38,6.66-22.43c5.99-13.31,18.58-21,31.38-18.13c0-1.85-0.26-3.66,0.04-5.36c2.32-12.88,7.49-24.64,14.28-35.74
 		c0.6-0.98,1-2.09,1.49-3.15c-1.65-0.01-3.31-0.01-4.96-0.02C808.81,710.2,807,714.69,805.18,719.17z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameState}
-            d="M904.94,690.16c-1.7,5.17-3.36,10.22-4.98,15.14c3.75,2.67,7.1,5.06,10.51,7.49
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameState}
+              d="M904.94,690.16c-1.7,5.17-3.36,10.22-4.98,15.14c3.75,2.67,7.1,5.06,10.51,7.49
 		c4.84-5.18,10.71-7.98,17.75-8.54c7.4-0.59,13.23,2.39,18.36,8.17c-1.76-16.18-5.73-25.3-11.98-28.12
 		c2.86,12.97,2.86,13.64-0.31,16.31c-2.57-7.04-1.7-15.43-8.68-20.42c-1.3,0-2.84,0-4.61,0c5.45,6.24,7.48,15.03,3.99,20.62
 		c-3.34-7.15-3.02-15.9-12.5-20.03c-1.7,1.67-3.79,3.74-6.05,5.96c7.35,5.33,9.95,12.86,7.01,19.75
 		C909.24,701.5,910.59,694.07,904.94,690.16z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M900.45,712.74c-9.46-5.52-19.45-4.73-29.69-2.87c-12.27,2.22-22.41,9.22-33.44,14.22
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M900.45,712.74c-9.46-5.52-19.45-4.73-29.69-2.87c-12.27,2.22-22.41,9.22-33.44,14.22
 		c-0.08,0.04-0.01,0.42-0.01,1.59c3.59-0.87,7.08-1.32,10.27-2.56c10.86-4.22,21.8-7.85,33.66-7.38
 		c10.78,0.43,19.06,5.75,25.89,13.6c4.78,5.49,7.37,12.03,7.99,19.31c1.73,0,3.47,0,5.09,0c0.58-2.8,0.63-6.19,0.03-9.81
 		c-0.27-1.61-0.66-3.26-1.18-4.92c-0.26-0.83-0.56-1.67-0.89-2.5s-0.7-1.67-1.1-2.49c-0.2-0.41-0.41-0.83-0.63-1.24
 		c-0.44-0.82-0.91-1.64-1.43-2.44c-0.26-0.4-0.52-0.8-0.8-1.2c-0.49-0.71-1.02-1.4-1.57-2.09c-0.39-0.49-0.8-0.97-1.23-1.44
 		c-2.65-2.94-5.93-5.57-9.9-7.65C901.15,712.84,900.73,712.9,900.45,712.74z"
-          />
-		  </Link>
+            />
+          </Link>
           <Link to="/mint">
             <path
               onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
               className={classNameState}
               d="M980.77,758.89c0.04-1.37,0.16-2.75,0.23-4.12c0.07-1.37,0.08-2.74-0.11-4.07c-0.23-1.67-1.24-4.03-2.56-4.63
 		c-4.52-2.05-9.34-3.45-13.8-5.02c-5.97,10.79-14.32,16.41-26.04,17.19c1.35,1.23,2.65,2.49,3.88,3.78
@@ -14754,85 +14938,85 @@ function Cafe() {
 		C765.25,890.62,771.68,885.89,778.12,881.17z"
           />
 
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameState}
-            d="M820.96,705.87c-9.67,12.68-14.58,27.03-17.58,42.16c-0.28,1.43,0.13,3,0.21,4.5
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameState}
+              d="M820.96,705.87c-9.67,12.68-14.58,27.03-17.58,42.16c-0.28,1.43,0.13,3,0.21,4.5
 		c6.15-20.35,20.51-32.9,37.6-43.08c-0.48-1.25-0.97-2.38-1.48-3.38c-1.93-3.82-4.08-5.77-6.93-5.85c-0.38-0.01-0.76,0-1.16,0.05
 		c-0.08,2.1,1.76,4.23,0.6,6.65c-0.17,0.35-0.39,0.7-0.69,1.05c-1.71-2.78-3.19-5.18-4.96-8.05c-1.36,1.08-2.63,2.1-3.86,3.09
 		c2.16,3.2,3.65,6.21,1.33,10.16C822.93,710.53,821.98,708.27,820.96,705.87z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M939.98,750.56c1.31-0.89,2.65-1.81,4.12-2.81c0.56,0.06,1.46,0.16,2.26,0.24c0.33-0.18,0.63-0.24,0.73-0.4
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M939.98,750.56c1.31-0.89,2.65-1.81,4.12-2.81c0.56,0.06,1.46,0.16,2.26,0.24c0.33-0.18,0.63-0.24,0.73-0.4
 		c4.06-6.95,2.67-14.04,0.46-21.13c-0.52-1.68-1.08-3.34-1.62-5.01c-1.01-1.54-2.03-3.07-3.13-4.5c-0.21-0.28-0.43-0.55-0.65-0.82
 		c-2.37-2.9-5.19-5.26-9.23-6.1c-0.42-0.09-0.86-0.16-1.31-0.21c-1.01,1.58-0.8,2.96-0.14,4.16c0.09,0.17,0.19,0.33,0.3,0.49
 		c0.4,0.59,0.9,1.12,1.38,1.6c1.71,1.68,3.2,3.45,4.41,5.39c0.51,0.81,0.95,1.66,1.35,2.54c0.38,0.84,0.71,1.71,0.99,2.61
@@ -14841,45 +15025,45 @@ function Cafe() {
 		c0.41,1.01,0.83,2.02,1.2,2.93c-3.78,0.7-7.47,1.39-11.15,2.07c0.1,1.26,0.2,2.52,0.31,3.83c0.18,2.18,0.36,4.48,0.57,7.11
 		c2.23-0.18,4.45-0.36,6.66-0.54c2.21-0.18,4.42-0.36,6.62-0.54c0,0,0,0,0,0c0,0,0,0,0,0C939.12,751.16,939.55,750.86,939.98,750.56
 		z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M805.19,797.42c1.88,3.16,3.26,5.47,4.64,7.78c0.91,0.09,1.82,0.18,3.34,0.34c-0.62,0.53-1.14,0.96-1.6,1.35
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M805.19,797.42c1.88,3.16,3.26,5.47,4.64,7.78c0.91,0.09,1.82,0.18,3.34,0.34c-0.62,0.53-1.14,0.96-1.6,1.35
 		c-0.46,0.39-0.87,0.74-1.28,1.08c0.47,1.13,0.7,2.18,0.76,3.16c0.02,0.4,0,0.79-0.03,1.17c-0.04,0.48-0.13,0.95-0.25,1.4
 		c-0.26,0.96-0.67,1.86-1.18,2.73c-1.11,1.87-2.68,3.59-4.06,5.37c-0.73,0.47-1.45,0.93-2.18,1.4c-2.15,1.99-4.3,3.98-6.65,5.61
 		c-0.34,0.23-0.67,0.46-1.02,0.68c-0.69,0.43-1.39,0.84-2.12,1.2c-2.19,1.08-4.59,1.79-7.33,1.9c-1.26,0.05-2.49,0.97-3.83,1.53
@@ -14888,1877 +15072,1877 @@ function Cafe() {
 		c1.39,0.13,2.78,0.06,4.18-0.14c2.16-0.3,4.34-0.91,6.52-1.53c2.78-2.36,5.53-4.77,8.35-7.08c5.61-4.6,8.88-10.81,9.26-17.69
 		c0.23-4.14-2.41-8.45-3.85-12.65c-0.34-0.98-1.04-1.83-1.58-2.74c0,0,0,0,0,0c-0.47-0.47-0.94-0.94-1.41-1.41l0,0
 		C809.33,797.42,807.44,797.42,805.19,797.42z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M1003.03,812.05c1.59,2.65,3.54,5.64,3.61,8.53c0.28,11.13-5,19.26-14.89,24.42
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M1003.03,812.05c1.59,2.65,3.54,5.64,3.61,8.53c0.28,11.13-5,19.26-14.89,24.42
 		c-0.65,0.34-1.02,1.23-1.71,2.11c0.98,1.48,1.91,2.89,3.09,4.67c1.58-1.2,2.72-2.06,3.78-2.87c-0.71-1.51-1.23-2.6-1.89-4
 		c1.82-0.14,3.1-0.25,4.5-0.36c0.55-1.39,1.07-2.74,1.6-4.08c0.2,0.05,0.39,0.09,0.59,0.14c2.48-2.43,5.18-4.69,7.41-7.34
 		c4.94-5.87,8.13-12.4,7.03-20.45c-1.07-7.87-5.13-13.86-11.49-19.77c-2.53,5.12-4.71,9.53-6.84,13.84
 		C1000.02,809.02,1001.96,810.27,1003.03,812.05z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M878.47,811.82c2.37,2.65,4.75,5.31,7.12,7.96c4.66-1.48,9.23-3.44,14.01-4.31
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M878.47,811.82c2.37,2.65,4.75,5.31,7.12,7.96c4.66-1.48,9.23-3.44,14.01-4.31
 		c5.78-1.06,11.13-2.9,16.12-5.91c0.03-0.29,0.05-0.56,0.06-0.84c0.03-1.36-0.28-2.57-0.78-3.7c-1-2.24-2.77-4.13-4.18-6.19
 		c-6.99,2.31-14.07,4.38-20.93,7.01C885.9,807.37,882.26,809.8,878.47,811.82z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M935.67,739.51c-0.37-0.91-0.79-1.92-1.2-2.93c-3.75-0.53-4.38-3.36-5.04-6.43c-0.65-3-1.78-5.9-2.89-9.46
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M935.67,739.51c-0.37-0.91-0.79-1.92-1.2-2.93c-3.75-0.53-4.38-3.36-5.04-6.43c-0.65-3-1.78-5.9-2.89-9.46
 		c0.85,0.24,1.56,0.43,2.22,0.61c0.22,0.06,0.44,0.12,0.66,0.18c0.46,0.29,0.91,0.58,1.37,0.86c0,0-0.03-0.02-0.05-0.03l-0.02-0.01
 		c2,1.9,3.99,3.8,5.99,5.71h0l0,0c1.18-0.06,2.35-0.13,3.53-0.19v0c-0.1-0.42-0.22-0.82-0.35-1.23c-0.27-0.9-0.6-1.77-0.99-2.61
 		c-0.4-0.88-0.84-1.73-1.35-2.54c-1.21-1.94-2.7-3.71-4.41-5.39c-0.48-0.48-0.98-1.01-1.38-1.6c-0.11-0.16-0.21-0.32-0.3-0.49
 		c-0.66-1.19-0.88-2.58,0.14-4.16c-0.84-0.12-1.66-0.18-2.47-0.18c-0.03,0-0.07,0-0.1,0c-2.5,0-4.81,0.53-7.02,1.4
 		c-0.74,0.29-1.46,0.62-2.17,0.98c-2.14,1.08-4.21,2.43-6.28,3.87c2.44,2.89,4.43,5.9,6.02,9.03c1.06,2.09,1.95,4.23,2.67,6.43
 		c0.18,0.55,0.35,1.1,0.52,1.66c0.81,2.78,1.39,5.64,1.76,8.59C928.2,740.9,931.89,740.21,935.67,739.51z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M857.82,679.97c-3.85,2.15-7.98,4.11-9.33,8.98c-0.26,0.93-1.17,1.67-1.83,2.56
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M857.82,679.97c-3.85,2.15-7.98,4.11-9.33,8.98c-0.26,0.93-1.17,1.67-1.83,2.56
 		c-2.39-1.01-3.47-2.59-3.83-4.55c-0.12-0.65-0.16-1.35-0.13-2.08c-0.23,0.37-0.58,0.7-0.67,1.1c-0.83,3.89-1.75,4.36-5.52,2.94
 		c-1.74-0.65-3.53-1.18-5.29-1.76c-0.68,0.69-1.36,1.97-2.05,1.98c-6.11,0.08-10.11,3.58-13.38,8.14c-1.92,2.67-3.45,5.61-5.16,8.43
 		c0,0,0,0,0,0c1.65,0.01,3.31,0.01,4.96,0.02c1.42-2.01,2.84-4.03,4.25-6.04c5.81-8.27,16.11-6.12,20.48-1.65
 		c2.59,2.65,4.55,5.91,7.01,9.2c0.76-0.39,1.73-0.89,2.22-1.15c0.39-4.83,0.43-9.13,1.14-13.31c1.22-7.14,2.71-11.5,12.97-11.38
 		c2.57,0.03,5.14,0.45,7.7,0.69C867.6,678.61,862.06,677.61,857.82,679.97z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M796.72,738.44c1.19-2.31,2.23-4.01,2.98-5.83c1.84-4.47,3.67-8.95,5.48-13.44
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M796.72,738.44c1.19-2.31,2.23-4.01,2.98-5.83c1.84-4.47,3.67-8.95,5.48-13.44
 		c1.82-4.48,3.63-8.97,5.45-13.45c1.71-2.82,3.24-5.76,5.16-8.43c3.27-4.55,7.26-8.06,13.38-8.14c0.69-0.01,1.37-1.29,2.05-1.98
 		c-0.78-0.2-1.56-0.37-2.33-0.5c-0.77-0.13-1.54-0.22-2.31-0.28c-0.76-0.06-1.52-0.08-2.28-0.06c-3.77,0.08-7.42,1.11-10.86,3.22
 		c-4.82,2.95-6.8,8.11-8.63,13.05c-2.03,5.49-3.97,11.01-5.89,16.54c-1.91,5.53-3.8,11.07-5.73,16.6
 		C794.24,736.53,795.27,737.33,796.72,738.44z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M874.9,678.87c-5.51-3.02-11.17-5.81-17.89-5.32c-2.76,0.2-5.85,1.38-8.45,3.08
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M874.9,678.87c-5.51-3.02-11.17-5.81-17.89-5.32c-2.76,0.2-5.85,1.38-8.45,3.08
 		c-1.49,0.97-2.81,2.12-3.83,3.36s-1.71,2.56-1.95,3.9c-0.06,0.33-0.09,0.67-0.09,1v0c-0.02,0.73,0.02,1.42,0.13,2.08
 		c0.36,1.96,1.44,3.53,3.83,4.55c0.66-0.89,1.57-1.63,1.83-2.56c1.35-4.87,5.48-6.83,9.33-8.98c4.23-2.37,9.78-1.37,13.54,2.13
 		c6.42,2.31,10.72,7.25,15.09,12.11c0.33,0.34,0.67,0.69,1,1.03c0,0,0.12,0.16,0.12,0.16c1.26-0.88,2.52-1.75,3.79-2.63
 		C886.84,687,881.28,682.36,874.9,678.87z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-              setClassNameCouch("hover");
-              setClassNameState("hover");
-              setClassNameCouch3("hover");
-              setClassNameCouch4("hover");
-              setClassNameCouch5("hover");
-              setClassNameCouch6("hover");
-              setClassNameCouch7("hover");
-              setClassNameCouch8("hover");
-              setClassNameCouch9("hover");
-            }}
-            onMouseLeave={() => {
-              setClassNameCouch("couch");
-              setClassNameState("couch2");
-              setClassNameCouch3("couch3");
-              setClassNameCouch4("couch4");
-              setClassNameCouch5("couch5");
-              setClassNameCouch6("couch6");
-              setClassNameCouch7("couch7");
-              setClassNameCouch8("couch8");
-              setClassNameCouch9("couch9");
-            }}
-            onMouseDown={() => {
-              setClassNameCouch("clicked");
-              setClassNameState("clicked");
-              setClassNameCouch3("clicked");
-              setClassNameCouch4("clicked");
-              setClassNameCouch5("clicked");
-              setClassNameCouch6("clicked");
-              setClassNameCouch7("clicked");
-              setClassNameCouch8("clicked");
-              setClassNameCouch9("clicked");
-            }}
-            className={classNameCouch9}
-            d="M924.88,669.74c-8.33-0.04-15.9,1.66-22.61,6.73c-0.57,0.43-1.49,0.38-2.25,0.54
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch9}
+              d="M924.88,669.74c-8.33-0.04-15.9,1.66-22.61,6.73c-0.57,0.43-1.49,0.38-2.25,0.54
 		c-0.34,0.49-0.68,0.99-1.02,1.48c-1.5,2.93-3.01,5.86-4.48,8.74c2.81,4.26,2.66,5.6-1.59,8.01c-0.32-0.51-0.72-1.14-1.13-1.8
 		c-0.14-0.22-0.28-0.44-0.42-0.67h0c-1.26,0.88-2.52,1.75-3.79,2.63c2.13,3.47,3.69,7.59,8.88,8.08c0.26-0.9,0.62-1.65,0.69-2.43
 		c0.57-5.82,2.35-11.19,5.73-16c4.97-7.07,11.23-11.76,20.37-10.82c4.04,0.41,8.03,1.27,12.04,1.93
 		C932.96,672.17,930,669.76,924.88,669.74z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M768.84,859.62c-3.11-0.99-6.29-2.07-9.07-3.72c-7.6-4.52-14.17-10.18-18.1-18.49
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M768.84,859.62c-3.11-0.99-6.29-2.07-9.07-3.72c-7.6-4.52-14.17-10.18-18.1-18.49
 		c0.09,4.34,0.62,8.58,0.7,12.83c0.15,7.96,0.21,15.94-0.01,23.9c-0.15,5.3-1.1,10.58-1.23,15.88c-0.01,0.49-0.01,0.98,0,1.47
 		c0.06,3.43,0.59,6.87,0.87,10.31c0,0,0,0,0,0c0.27,0.24,0.54,0.49,0.81,0.74c0.12-0.1,0.24-0.2,0.37-0.29
 		c-0.18-0.38-0.36-0.75-0.53-1.13c-0.88-15.4,0.61-30.56,4.17-46.2c11.28,3.35,20.42,9.54,29.82,15.29
 		C776.56,864.01,774.52,861.42,768.84,859.62z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameState}
-            d="M899.6,815.46c-4.77,0.87-9.34,2.83-14.01,4.31c0,3.23,0,6.47,0,9.35c8.7-2.3,16.91-4.4,25.07-6.67
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameState}
+              d="M899.6,815.46c-4.77,0.87-9.34,2.83-14.01,4.31c0,3.23,0,6.47,0,9.35c8.7-2.3,16.91-4.4,25.07-6.67
 		c1.5-0.42,3.79-1.29,4.02-2.33c0.29-1.29,0.46-2.6,0.59-3.92c0.21-2.21,0.27-4.44,0.45-6.66
 		C910.73,812.57,905.38,814.4,899.6,815.46z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameState}
-            d="M856.81,690.75c-0.28,0.08-0.56,0.16-0.83,0.24c-0.61,4.55-1.21,9.11-1.84,13.81
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameState}
+              d="M856.81,690.75c-0.28,0.08-0.56,0.16-0.83,0.24c-0.61,4.55-1.21,9.11-1.84,13.81
 		c10.2-1.71,19.72-3.3,30.05-5.03c-4.44-4.14-8.64-8.06-13.26-12.36c-0.81,1.8-1.15,2.57-1.49,3.33c-3.92-0.15-6.38-4.99-11.24-2.86
 		c4.32,2.56,4.36,6.02,3.36,10.49C859.74,695.46,858.27,693.11,856.81,690.75z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M959.62,726.54c-0.11,0.56-0.23,1.11-0.34,1.67c1.38,0.86,2.65,2.03,4.15,2.53c4.24,1.42,8.67,2.3,12.83,3.89
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M959.62,726.54c-0.11,0.56-0.23,1.11-0.34,1.67c1.38,0.86,2.65,2.03,4.15,2.53c4.24,1.42,8.67,2.3,12.83,3.89
 		c6.82,2.61,12.98,6.07,13.49,14.61l0.04,0.04c1.36,1.06,2.71,2.13,4.3,3.37c1.01-1.58,1.79-2.8,2.57-4.02
 		c0.06-0.2,0.13-0.39,0.19-0.59c0.13-4.2-1.04-7.74-3.17-10.81c-0.43-0.61-0.89-1.21-1.39-1.78c-0.25-0.29-0.51-0.57-0.77-0.85
 		c-0.8-0.84-1.68-1.64-2.62-2.4c-1.91-0.65-3.82-1.3-5.73-1.96c-4.31-1.47-8.62-2.95-12.94-4.42
 		C966.7,726.06,963.16,726.3,959.62,726.54z"
-          />
-		  </Link>
+            />
+          </Link>
           <Link to="/mint">
             <path
               onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
               className={classNameState}
               d="M865.65,835.27c-0.62,8.2-3,15.28-10.88,19.64c-2.58,1.42-4.39,4.23-6.55,6.4c0.41,0.45,0.81,0.9,1.22,1.36
 		c4.12-3.39,8.59-6.44,12.27-10.25c6.79-7.04,13.11-14.53,19.62-21.83c0.38,0.18,0.75,0.35,1.13,0.53
 		c-0.36-2.89-0.73-5.77-1.09-8.66c-5.19,3.08-10.38,6.17-15.57,9.25C865.75,832.89,865.74,834.08,865.65,835.27z"
             />
           </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M787.68,863.76c-4.1-7.4-8.78-14.92-18.61-16.36c-1.63,4.69-5.16,3.95-8.75,3.04
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M787.68,863.76c-4.1-7.4-8.78-14.92-18.61-16.36c-1.63,4.69-5.16,3.95-8.75,3.04
 		c3.38,1.43,6.69,3.1,10.17,4.24c3.76,1.23,6.68,3.04,8.6,6.7c2.22,4.21,1.77,8.63,2.12,13.06c0.18,2.32,1.39,4.56,2.27,7.24
 		c3.21-2.15,5.78-3.42,4.14-6.92c-0.13,0.44-0.25,0.88-0.68,2.36c-2.1-2.85-3.74-5.08-5.39-7.32c0.34-0.41,0.68-0.83,1.02-1.24
 		c1.4,0.85,2.81,1.71,4.21,2.56c0,0,0,0,0,0c0.99,0.23,1.99,0.45,2.98,0.68c0.22,0.05,0.44,0.1,0.67,0.15
 		C789.51,869.22,788.59,866.49,787.68,863.76z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameState}
-            d="M920.21,805.95c0.22,4.03,0.45,8.05,0.67,12.06c14.97-1.78,16.96-15.44,12.19-23.47
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameState}
+              d="M920.21,805.95c0.22,4.03,0.45,8.05,0.67,12.06c14.97-1.78,16.96-15.44,12.19-23.47
 		c-3.24,2.87-6.48,5.74-9.72,8.61C922.3,804.08,921.25,805.02,920.21,805.95z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M921.46,665.04c-0.97,0.13-1.93,0.32-2.88,0.53c-1.43,0.32-2.84,0.73-4.23,1.25
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M921.46,665.04c-0.97,0.13-1.93,0.32-2.88,0.53c-1.43,0.32-2.84,0.73-4.23,1.25
 		c-1.54,0.57-3.04,1.26-4.49,2.06c-0.73,0.4-1.44,0.83-2.15,1.29c-1.77,1.15-3.44,2.5-5.01,4c-0.93,0.89-1.84,1.82-2.69,2.83
 		c0,0,0,0,0.01,0l0,0c0,0,0-0.01,0.01-0.01c0,0,0,0.01-0.01,0.01c0.76-0.17,1.69-0.12,2.25-0.54c6.72-5.07,14.29-6.76,22.61-6.73
 		c5.13,0.02,8.09,2.43,10.42,6.42l0.04,0.04c0.42,0.29,0.84,0.57,1.26,0.86h0c0,0-0.01,0-0.01,0c0.27,0.2,0.54,0.39,0.81,0.59
 		c0,0,0.04,0.02,0.04,0.02h0l0,0c0.38,0,0.77,0,1.19,0c0.71,0,1.54,0,2.7,0c0.15-1.29,0.3-2.56,0.45-3.83
 		c0.15-1.27,0.3-2.53,0.45-3.79v0c-0.76-0.47-1.5-1-2.24-1.52c-0.74-0.52-1.49-1.03-2.27-1.45c-0.52-0.28-1.05-0.52-1.6-0.7
 		C931.3,664.81,926.3,664.39,921.46,665.04z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M927.89,784.6c3.11,2.63,6.22,5.27,9.33,7.9c3.63-2.43,7.25-4.85,10.88-7.28c-0.07-0.4-0.14-0.79-0.21-1.19
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M927.89,784.6c3.11,2.63,6.22,5.27,9.33,7.9c3.63-2.43,7.25-4.85,10.88-7.28c-0.07-0.4-0.14-0.79-0.21-1.19
 		c-0.4-2.26-0.79-4.51-1.19-6.77C938.73,775.34,932.88,778.87,927.89,784.6z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch7}
-            d="M868.3,862.82c-10.12,8.08-22.05,12.9-33.43,18.72c-0.66,0.34-1.38,0.53-2.13,0.68
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch7}
+              d="M868.3,862.82c-10.12,8.08-22.05,12.9-33.43,18.72c-0.66,0.34-1.38,0.53-2.13,0.68
 		c-0.75,0.15-1.52,0.27-2.25,0.45c0,0,0,0,0,0c-1.02,0.56-2.04,1.11-3.06,1.67c2.41,0.38,4.51,0.13,6.58-0.24
 		c9.32-1.67,18.7-3.43,26-10.08c2.17-1.98,4.2-4.11,6.2-6.27c1.99-2.17,3.95-4.38,5.97-6.52
 		C870.88,861.74,869.35,861.98,868.3,862.82z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M814.22,801.57c1.44,4.2,4.08,8.51,3.85,12.65c-0.38,6.88-3.66,13.1-9.26,17.69
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M814.22,801.57c1.44,4.2,4.08,8.51,3.85,12.65c-0.38,6.88-3.66,13.1-9.26,17.69
 		c-2.82,2.31-5.57,4.72-8.35,7.08c11.77-1.89,22.29-14.46,22.18-26.76c-0.03-3.82-0.55-6.52-1.73-8.5
 		c-0.58-0.97-1.32-1.76-2.24-2.42c-0.96-0.7-2.11-1.27-3.5-1.75c-0.77-0.26-1.62-0.5-2.54-0.72
 		C813.17,799.75,813.88,800.6,814.22,801.57z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M853.3,839.44c2.11-1.31,4.22-2.62,6.32-3.96c0.51-0.32,0.77-1.05,1.14-1.58c-0.79-3.06-1.58-6.13-2.36-9.19
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M853.3,839.44c2.11-1.31,4.22-2.62,6.32-3.96c0.51-0.32,0.77-1.05,1.14-1.58c-0.79-3.06-1.58-6.13-2.36-9.19
 		c-0.72,0.37-1.48,0.68-2.15,1.12c-4.52,2.94-9.02,5.9-13.53,8.86c0,0,0,0,0,0c1.41,2.89,2.83,5.78,4.24,8.68
 		C849.07,842.05,851.19,840.75,853.3,839.44z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M912.94,796.71L912.94,796.71c1.14,0.97,2.31,1.92,3.37,2.95c0.71,0.69,1.37,1.41,1.96,2.2
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M912.94,796.71L912.94,796.71c1.14,0.97,2.31,1.92,3.37,2.95c0.71,0.69,1.37,1.41,1.96,2.2
 		c0.87,1.18,1.56,2.51,1.94,4.08c1.05-0.93,2.09-1.87,3.14-2.8c3.24-2.87,6.48-5.74,9.72-8.61c-2.18-2.62-4.35-5.23-6.53-7.85
 		C922,790.03,917.47,793.37,912.94,796.71z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M862.78,821.07L862.78,821.07c0.26,0.93,0.53,1.87,0.79,2.8c0.74,2.61,1.48,5.22,2.22,7.82c0,0,0,0,0,0
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M862.78,821.07L862.78,821.07c0.26,0.93,0.53,1.87,0.79,2.8c0.74,2.61,1.48,5.22,2.22,7.82c0,0,0,0,0,0
 		c5.19-3.08,10.38-6.17,15.57-9.25c-2.13-3.1-4.25-6.19-6.38-9.29C870.92,815.8,866.85,818.44,862.78,821.07z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M750.85,840.56c-2.89-4.62-4.65-9.46-4.18-15.08c0.67-8.01,0.85-16.07,1.53-24.08
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M750.85,840.56c-2.89-4.62-4.65-9.46-4.18-15.08c0.67-8.01,0.85-16.07,1.53-24.08
 		c0.6-7.03,1.19-14.11,2.56-21.02c1.29-6.55,3.57-12.9,5.42-19.34c-0.21,0.06-0.54,0.05-0.61,0.18c-4.18,7.73-6.31,16.09-7.41,24.74
 		c-0.68,5.37-1.07,10.79-2.07,16.09c-1.76,9.32-2.68,18.62-0.76,27.98c0.63,3.06,1.34,6.11,2.84,8.78c0.9,1.6,2.08,3.06,3.69,4.3
 		C751.53,842.27,751.33,841.33,750.85,840.56z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameState}
-            d="M965.91,778.88c-0.21,2.3-0.42,4.6-0.63,6.89c-0.21,2.29-0.42,4.57-0.63,6.84
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameState}
+              d="M965.91,778.88c-0.21,2.3-0.42,4.6-0.63,6.89c-0.21,2.29-0.42,4.57-0.63,6.84
 		c9.87-0.84,14.17-10.77,11.38-18.84C972.66,775.47,969.28,777.17,965.91,778.88z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameState}
-            d="M860.76,833.9c-0.38,0.54-0.63,1.26-1.14,1.58c-2.1,1.33-4.2,2.65-6.32,3.96c-2.11,1.31-4.23,2.61-6.34,3.92
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameState}
+              d="M860.76,833.9c-0.38,0.54-0.63,1.26-1.14,1.58c-2.1,1.33-4.2,2.65-6.32,3.96c-2.11,1.31-4.23,2.61-6.34,3.92
 		h0c0.39,3.66,0.77,7.32,1.14,10.8c1.72-1.08,3.32-2.22,5.03-3.15c0.85-0.46,1.69-1.18,2.5-2.07c1.07-1.2,2.08-2.71,2.92-4.34
 		C860.43,840.91,861.51,836.61,860.76,833.9z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameState}
-            d="M951.31,798.09c3.08-0.21,5.92-1.13,7.84-4.67c2.31-4.25,2.73-8.63,2.43-13.24c-3.04,0.95-6.08,1.9-9.13,2.85
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameState}
+              d="M951.31,798.09c3.08-0.21,5.92-1.13,7.84-4.67c2.31-4.25,2.73-8.63,2.43-13.24c-3.04,0.95-6.08,1.9-9.13,2.85
 		C952.08,788.03,951.7,793.04,951.31,798.09z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M962.21,769.51C962.21,769.51,962.21,769.51,962.21,769.51c0.02,0.05,0.04,0.11,0.06,0.16
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M962.21,769.51C962.21,769.51,962.21,769.51,962.21,769.51c0.02,0.05,0.04,0.11,0.06,0.16
 		c1.21,3.07,2.42,6.14,3.63,9.21c3.38-1.7,6.75-3.41,10.13-5.11c-1.67-3.16-3.34-6.32-5.01-9.48
 		C968.09,766.03,965.15,767.77,962.21,769.51z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameState}
-            d="M937.22,792.51c1.02,4.01,2.05,8.01,3.1,12.14c2.55-4.1,5.25-8.44,7.96-12.78c0.26,0.05,0.51,0.1,0.77,0.15
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameState}
+              d="M937.22,792.51c1.02,4.01,2.05,8.01,3.1,12.14c2.55-4.1,5.25-8.44,7.96-12.78c0.26,0.05,0.51,0.1,0.77,0.15
 		c-0.32-2.26-0.64-4.53-0.95-6.79C944.47,787.66,940.85,790.08,937.22,792.51z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M949.67,726.91c-0.82-1.6-1.7-2.99-2.57-4.11c-0.39-0.51-0.79-0.97-1.17-1.35c0.54,1.67,1.1,3.33,1.62,5.01
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M949.67,726.91c-0.82-1.6-1.7-2.99-2.57-4.11c-0.39-0.51-0.79-0.97-1.17-1.35c0.54,1.67,1.1,3.33,1.62,5.01
 		c2.21,7.09,3.6,14.17-0.46,21.13c-0.1,0.17-0.39,0.23-0.73,0.4c-0.79-0.08-1.7-0.18-2.26-0.24c-1.47,1.01-2.81,1.92-4.12,2.81
 		c-0.44,0.3-0.87,0.59-1.3,0.89c0,0,0,0,0,0c6.03-0.28,10.82-3.17,15.04-6.88c0.47-4.01-0.5-8.82-2.07-13.12
 		C951.06,729.84,950.39,728.3,949.67,726.91z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M767.38,755.08c4.53-2.78,8.87-5.44,13.65-8.38c-1.17-0.81-1.71-1.51-2.26-1.51
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M767.38,755.08c4.53-2.78,8.87-5.44,13.65-8.38c-1.17-0.81-1.71-1.51-2.26-1.51
 		c-3.04-0.04-6.08,0.1-9.12,0.17c-0.22,0.12-0.43,0.24-0.65,0.36c-0.22,0.12-0.43,0.24-0.65,0.36c-0.24,0.19-0.47,0.38-0.71,0.57
 		c0,0-0.01,0.01-0.02,0.02c-0.02,0.01-0.03,0.02-0.03,0.02c-0.28,0.18-0.56,0.36-0.84,0.54C765.39,750,763.8,752.79,767.38,755.08z"
-          />
-          <polygon
-            className="st12"
-            points="766.75,747.24 766.75,747.23 766.75,747.23 766.75,747.23 	"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M951.03,775.26c0.48,2.59,0.95,5.18,1.43,7.77c3.04-0.95,6.08-1.9,9.13-2.85c-1.15-2.91-2.3-5.83-3.44-8.74
+            />
+            <polygon
+              className="st12"
+              points="766.75,747.24 766.75,747.23 766.75,747.23 766.75,747.23 	"
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M951.03,775.26c0.48,2.59,0.95,5.18,1.43,7.77c3.04-0.95,6.08-1.9,9.13-2.85c-1.15-2.91-2.3-5.83-3.44-8.74
 		C955.77,772.71,953.4,773.98,951.03,775.26z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameState}
-            d="M978.95,769.42C978.95,769.42,978.95,769.42,978.95,769.42c0.23,0.86,0.45,1.71,0.67,2.56
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameState}
+              d="M978.95,769.42C978.95,769.42,978.95,769.42,978.95,769.42c0.23,0.86,0.45,1.71,0.67,2.56
 		c0.11,0.42,0.22,0.84,0.33,1.26c0.22,0.83,0.43,1.65,0.64,2.44c0.31,1.18,0.61,2.3,0.88,3.33c2.29-1.96,5-4.29,7.18-6.15
 		c-2.78-2.6-5.15-4.83-7.52-7.05C980.41,767.01,979.68,768.21,978.95,769.42C978.95,769.42,978.95,769.42,978.95,769.42z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M989.79,749.29c0.34,1.04,0.52,2.2,0.93,3.2c0.14,0.33,0.3,0.65,0.5,0.94c1.85,2.66,4.01,5.11,6.03,7.62
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M989.79,749.29c0.34,1.04,0.52,2.2,0.93,3.2c0.14,0.33,0.3,0.65,0.5,0.94c1.85,2.66,4.01,5.11,6.03,7.62
 		c2.34-2.66,3.06-5.88,0.64-9.49c-0.58-0.86-0.83-1.93-1.23-2.91c-0.78,1.22-1.56,2.44-2.57,4.02
 		C992.51,751.42,991.15,750.35,989.79,749.29z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M799.52,868.88c0.68,0.74,1.42,1.55,2.31,2.5c0.81-1.02,1.87-2.36,3.92-4.94c-3.26-1.88-6.25-3.61-9.24-5.34
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M799.52,868.88c0.68,0.74,1.42,1.55,2.31,2.5c0.81-1.02,1.87-2.36,3.92-4.94c-3.26-1.88-6.25-3.61-9.24-5.34
 		c0.53-0.3,1.06-0.6,1.59-0.9c-1.11,0.39-2.22,0.77-3.34,1.16c0.96,1.82,1.92,3.64,2.87,5.46
 		C798.23,867.49,798.84,868.15,799.52,868.88z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M973.57,761.75L973.57,761.75c0.37,0.53,0.74,1.05,1.11,1.58c1.42,2.03,2.85,4.06,4.27,6.09c0,0,0,0,0,0
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M973.57,761.75L973.57,761.75c0.37,0.53,0.74,1.05,1.11,1.58c1.42,2.03,2.85,4.06,4.27,6.09c0,0,0,0,0,0
 		c0.73-1.21,1.46-2.41,2.19-3.62c-0.12-2.3-0.24-4.61-0.36-6.91C978.37,759.84,975.97,760.8,973.57,761.75z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M991.52,734.61c0.27,0.28,0.53,0.56,0.77,0.85c0.5,0.58,0.96,1.17,1.39,1.78c2.13,3.07,3.3,6.61,3.17,10.81
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M991.52,734.61c0.27,0.28,0.53,0.56,0.77,0.85c0.5,0.58,0.96,1.17,1.39,1.78c2.13,3.07,3.3,6.61,3.17,10.81
 		c0.94,0.21,1.88,0.43,2.82,0.64c-0.66-1.4-1.32-2.79-2.11-4.46c1.06-0.49,1.97-0.91,2.88-1.33c-0.37-0.6-0.83-1.18-1.24-1.77
 		c-0.41-0.59-0.77-1.19-0.92-1.85c-0.54-2.19-1.57-3.67-2.93-4.71c-0.31-0.23-0.63-0.44-0.97-0.63c-0.3-0.17-0.61-0.34-0.94-0.48
 		c-0.96-0.43-2.02-0.73-3.12-0.98c-0.47-0.1-0.94-0.2-1.42-0.29C989.84,732.97,990.72,733.77,991.52,734.61z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M997.56,744.23c0.79,1.67,1.45,3.06,2.11,4.46c0.98,1.18,1.96,2.35,2.94,3.53c0.67,0.13,1.34,0.26,2.01,0.39
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M997.56,744.23c0.79,1.67,1.45,3.06,2.11,4.46c0.98,1.18,1.96,2.35,2.94,3.53c0.67,0.13,1.34,0.26,2.01,0.39
 		c1.82-4.41,1.02-6.5-3.63-9.48c0,0,0,0,0,0c-0.11-0.04-0.21-0.09-0.31-0.13c-0.08-0.03-0.16-0.06-0.24-0.1
 		C999.53,743.32,998.62,743.74,997.56,744.23z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M1004.62,752.61c-0.66-0.13-1.33-0.26-2.01-0.39c0.33,1.19,0.66,2.38,1.01,3.61
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M1004.62,752.61c-0.66-0.13-1.33-0.26-2.01-0.39c0.33,1.19,0.66,2.38,1.01,3.61
 		c6.9-4.5,6.69-10.82-0.11-14.51c-0.45,0.32-0.88,0.63-1.3,0.93c-0.42,0.3-0.82,0.59-1.23,0.88
 		C1005.64,746.11,1006.44,748.2,1004.62,752.61z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M830.21,852.3c0.84-0.52,1.69-1.9,1.6-2.8c-0.09-0.83-1.44-2.2-2.2-2.18c-2.54,0.06-5.07,0.63-7.6,1.01
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M830.21,852.3c0.84-0.52,1.69-1.9,1.6-2.8c-0.09-0.83-1.44-2.2-2.2-2.18c-2.54,0.06-5.07,0.63-7.6,1.01
 		c0-0.01,0-0.02,0-0.03c-1.25,0.49-2.5,0.99-3.74,1.48c-0.14,0.44-0.28,0.87-0.42,1.31c1.33,0.96,2.67,1.91,4,2.87
 		c0.05-1.87,0.1-3.73,0.16-5.6c1.56,0.29,2.28,1.14,2.69,2.19c0.1,0.27,0.19,0.55,0.27,0.83c0.04,0.14,0.07,0.29,0.11,0.43
 		c0.17,0.73,0.31,1.47,0.56,2.15C827.18,853.44,828.86,853.14,830.21,852.3z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch7}
-            d="M819.14,915.01c0.87-1,1.61-2.03,2.21-3.08c0.4-0.7,0.75-1.41,1.03-2.13c0.43-1.08,0.74-2.19,0.93-3.32
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch7}
+              d="M819.14,915.01c0.87-1,1.61-2.03,2.21-3.08c0.4-0.7,0.75-1.41,1.03-2.13c0.43-1.08,0.74-2.19,0.93-3.32
 		c0.51-3.01,0.19-6.17-0.8-9.46C821.39,903.01,820.27,909.01,819.14,915.01z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameState}
-            d="M796.2,755.09c2.19,4.17,4.27,8.12,6.13,11.65c0.39-3.65,0.83-7.78,1.23-11.53
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameState}
+              d="M796.2,755.09c2.19,4.17,4.27,8.12,6.13,11.65c0.39-3.65,0.83-7.78,1.23-11.53
 		c-0.97,0.05-2.11,0.17-3.25,0.15C798.9,755.33,797.49,755.18,796.2,755.09z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch8}
-            d="M792.77,950.54c0.58,0.43,1.73,0.09,2.61,0.1c-1.62-3.06-3.24-6.11-4.87-9.17
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch8}
+              d="M792.77,950.54c0.58,0.43,1.73,0.09,2.61,0.1c-1.62-3.06-3.24-6.11-4.87-9.17
 		C789.16,945.28,789.84,948.4,792.77,950.54z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M782.56,868.56c-0.34,0.41-0.68,0.83-1.02,1.24c1.64,2.23,3.29,4.46,5.39,7.32c0.43-1.48,0.55-1.92,0.68-2.36
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M782.56,868.56c-0.34,0.41-0.68,0.83-1.02,1.24c1.64,2.23,3.29,4.46,5.39,7.32c0.43-1.48,0.55-1.92,0.68-2.36
 		c-0.28-1.21-0.56-2.42-0.84-3.64C785.37,870.27,783.97,869.42,782.56,868.56z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M791.83,873.38c0,1.64,0,3.28,0,5.43c2.67-1.91,4.07-3.68,4.34-5.48c0.03-0.2,0.05-0.4,0.05-0.6
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M791.83,873.38c0,1.64,0,3.28,0,5.43c2.67-1.91,4.07-3.68,4.34-5.48c0.03-0.2,0.05-0.4,0.05-0.6
 		c0.01-1.21-0.47-2.43-1.4-3.73C794.37,870.84,795.79,873.94,791.83,873.38z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M791.45,864.34c0.64,0.5,1.21,0.95,1.74,1.37s1.04,0.82,1.55,1.22l0,0c0.96-0.03,1.92-0.07,2.88-0.1
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M791.45,864.34c0.64,0.5,1.21,0.95,1.74,1.37s1.04,0.82,1.55,1.22l0,0c0.96-0.03,1.92-0.07,2.88-0.1
 		c0,0,0,0,0,0c-0.96-1.82-1.92-3.64-2.87-5.46c-0.25-0.3-0.5-0.61-0.75-0.91C793.13,861.77,792.28,863.07,791.45,864.34z"
-          />
-		  </Link>
+            />
+          </Link>
           <path
             className="st24"
             d="M751.89,843.15c0.48,0.68,0.97,1.35,1.45,2.03"
           />
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M933.62,682.17c-0.19,0.17-0.39,0.35-0.58,0.52c0.28,0.37,0.55,0.75,0.83,1.12c0.23-0.23,0.46-0.45,0.7-0.68
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M933.62,682.17c-0.19,0.17-0.39,0.35-0.58,0.52c0.28,0.37,0.55,0.75,0.83,1.12c0.23-0.23,0.46-0.45,0.7-0.68
 		C934.25,682.81,933.93,682.49,933.62,682.17z"
-          />
-		  </Link>
+            />
+          </Link>
           <path
             className="st26"
             d="M886.46,694.21c0.33,0.34,0.67,0.69,1,1.03"
@@ -17565,11 +17749,25 @@ function Cafe() {
 		c-2.39-4.23-0.45-8.21,2.2-11.92c2.96-0.35,6.28-0.37,7.65,2.4c2.31,4.67,0.07,8.72-4.31,13.14
 		C472.62,332.68,469.86,331.93,468.87,330.17z"
           />
-          <path
-            className="st3"
-            d="M337.55,483.48c1.02-2.56,2.81-4.93,2.68-7.21c-0.2-3.53-3.02-5.51-6.97-6.29
+          <Link to="/">
+            <path
+              onMouseOver={() => {
+                setClassNameDoor("hover");
+                setClassNameDoor1("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameDoor("couch7");
+                setClassNameDoor1("couch4");
+              }}
+              onMouseDown={() => {
+                setClassNameDoor("clicked");
+                setClassNameDoor1("clicked");
+              }}
+              className={classNameDoor1}
+              d="M337.55,483.48c1.02-2.56,2.81-4.93,2.68-7.21c-0.2-3.53-3.02-5.51-6.97-6.29
 		C333.63,474.77,331.79,479.69,337.55,483.48z"
-          />
+            />
+          </Link>
           <path
             className="st9"
             d="M561.82,265.78c1.89,2.25,3.37,4.62,6.75,3.28C566.08,268.68,565.88,263.51,561.82,265.78z"
@@ -17708,38 +17906,38 @@ function Cafe() {
           />
           <path
             onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
+              setClassNameCouch("hover");
+              setClassNameState("hover");
+              setClassNameCouch3("hover");
+              setClassNameCouch4("hover");
+              setClassNameCouch5("hover");
+              setClassNameCouch6("hover");
+              setClassNameCouch7("hover");
+              setClassNameCouch8("hover");
+              setClassNameCouch9("hover");
+            }}
+            onMouseLeave={() => {
+              setClassNameCouch("couch");
+              setClassNameState("couch2");
+              setClassNameCouch3("couch3");
+              setClassNameCouch4("couch4");
+              setClassNameCouch5("couch5");
+              setClassNameCouch6("couch6");
+              setClassNameCouch7("couch7");
+              setClassNameCouch8("couch8");
+              setClassNameCouch9("couch9");
+            }}
+            onMouseDown={() => {
+              setClassNameCouch("clicked");
+              setClassNameState("clicked");
+              setClassNameCouch3("clicked");
+              setClassNameCouch4("clicked");
+              setClassNameCouch5("clicked");
+              setClassNameCouch6("clicked");
+              setClassNameCouch7("clicked");
+              setClassNameCouch8("clicked");
+              setClassNameCouch9("clicked");
+            }}
             className={classNameCouch5}
             d="M874.88,741.16c9.3,3.92,19.24-1.63,20.82-11c0.39-2.32,1.28-3.35,3.62-2.93c-0.61-0.95-1.35-2.77-1.82-2.7
 		c-1.47,0.21-3.15,0.81-4.19,1.82c-2.77,2.7-4.93,6.1-7.92,8.48c-2.88,2.29-6.4,3.3-10.48,2.64c-0.46-0.07-0.94-0.18-1.44-0.28
@@ -17755,134 +17953,134 @@ function Cafe() {
 		c-1.65-0.25-3.31-0.5-4.96-0.76c0.72,0.85,1.43,1.71,2.14,2.56c1.78,1.62,3.57,3.24,5.4,4.9
 		C863.06,769.01,860.83,772.71,859.11,776.62z"
           />
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M860.01,780.87c-0.13-0.54-0.35-1.12-0.56-1.69c-0.14-0.38-0.27-0.76-0.35-1.12
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M860.01,780.87c-0.13-0.54-0.35-1.12-0.56-1.69c-0.14-0.38-0.27-0.76-0.35-1.12
 		c-0.13-0.54-0.16-1.03,0.01-1.44c1.72-3.91,3.94-7.61,6.22-11.85c-1.84-1.67-3.62-3.29-5.4-4.9c2.34,3.79,0.5,6.9-1.55,10.02
 		c-0.91,1.38-1.57,2.92-2.4,4.35c-1.57,2.72-1.26,5.22,0.57,6.75c0.83,0.69,1.97,1.19,3.39,1.4l0,0
 		C859.97,781.89,859.99,781.38,860.01,780.87z"
-          />
-		  </Link>
+            />
+          </Link>
           <polygon
             className="st12"
             points="859.96,782.4 859.95,782.4 859.95,782.4 859.95,782.4 859.95,782.41 	"
           />
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M871.15,775.3c-0.44,0.13-0.87,0.26-1.31,0.39c-0.83-1.99-1.65-3.97-2.72-6.55
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M871.15,775.3c-0.44,0.13-0.87,0.26-1.31,0.39c-0.83-1.99-1.65-3.97-2.72-6.55
 		c-0.63,1.83-1.11,3.21-1.58,4.59c1.4,1.34,2.81,2.69,4.29,4.11c0.86-1.21,1.47-2.37,1.84-3.48c0.28-0.84,0.43-1.64,0.45-2.42
 		c0-0.01,0-0.02,0-0.02c0.05-2.32-1.05-4.36-3.19-6.03C869.68,769.03,870.41,772.17,871.15,775.3z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M862.75,758.07c1.08,1.18,2.16,2.35,3.46,3.77c0.89-2.19,1.64-4.05,2.4-5.9c-0.39-0.73-0.79-1.46-1.18-2.19
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M862.75,758.07c1.08,1.18,2.16,2.35,3.46,3.77c0.89-2.19,1.64-4.05,2.4-5.9c-0.39-0.73-0.79-1.46-1.18-2.19
 		c-0.7,0.46-1.5,0.82-2.09,1.39C864.41,756.04,863.61,757.08,862.75,758.07c-1.38-4.61-2.86-5.64-6.56-4.16
 		c0.53,1.14,1.07,2.27,1.6,3.4C859.44,757.56,861.1,757.82,862.75,758.07z"
-          />
-		  </Link>
+            />
+          </Link>
           <path
             className="st2"
             d="M905.41,778.86c-4.94,4.01-9.45,8.55-14.27,12.72c-1.4,1.21-3.1,2.22-4.84,2.86c-1.61,0.6-3.46,0.52-5.19,0.84
@@ -17908,46 +18106,46 @@ function Cafe() {
 		c-4.85-1.4-9.25-3.4-14.45-1.7c4.25,2.15,8.82,3.84,12.69,6.42c3.01,2.01,5.6,4.56,7.28,8.3
 		C804.06,822.75,804.79,822.28,805.51,821.81z"
           />
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M956.51,715.78c0.04-3.67,1.12-7.15-2.89-10.42c-0.93,1.23-2.57,2.42-2.44,3.39
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M956.51,715.78c0.04-3.67,1.12-7.15-2.89-10.42c-0.93,1.23-2.57,2.42-2.44,3.39
 		C951.56,711.79,953.19,714.28,956.51,715.78z"
-          />
-		  </Link>
+            />
+          </Link>
           <path
             className="st2"
             d="M936.71,728.01c-0.45,0.2-0.9,0.41-1.4,0.63s-1.05,0.48-1.71,0.77c-0.96-2.38-1.92-4.75-2.88-7.11
@@ -17956,87 +18154,87 @@ function Cafe() {
 		c0.82-3.33-1.37-6.09-4.36-8.21c1.37-1.26,2.73-2.51,4.54-4.17c-0.94-0.37-1.64-0.65-2.23-0.88c-0.25-0.1-0.48-0.19-0.7-0.28
 		c-0.09-0.03-0.17-0.07-0.25-0.1c-0.2-0.08-0.39-0.15-0.58-0.23C939.06,727.89,937.88,727.95,936.71,728.01z"
           />
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch6}
-            d="M802.01,812.74c1.36,3.53,2.44,6.3,3.51,9.07c1.39-1.78,2.95-3.5,4.06-5.37c0.52-0.87,0.93-1.77,1.18-2.73
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch6}
+              d="M802.01,812.74c1.36,3.53,2.44,6.3,3.51,9.07c1.39-1.78,2.95-3.5,4.06-5.37c0.52-0.87,0.93-1.77,1.18-2.73
 		c0.12-0.45,0.21-0.92,0.25-1.4c0.04-0.38,0.05-0.77,0.03-1.17c-0.05-0.99-0.29-2.03-0.76-3.16
 		C807.32,809.68,804.35,811.39,802.01,812.74z"
-          />
-		  </Link>
-		  <Link to="/mint">
-          <path
-            onMouseOver={() => {
-				setClassNameCouch("hover");
-				setClassNameState("hover");
-				setClassNameCouch3("hover");
-				setClassNameCouch4("hover");
-				setClassNameCouch5("hover");
-				setClassNameCouch6("hover");
-				setClassNameCouch7("hover");
-				setClassNameCouch8("hover");
-				setClassNameCouch9("hover");
-			  }}
-			  onMouseLeave={() => {
-				setClassNameCouch("couch");
-				setClassNameState("couch2");
-				setClassNameCouch3("couch3");
-				setClassNameCouch4("couch4");
-				setClassNameCouch5("couch5");
-				setClassNameCouch6("couch6");
-				setClassNameCouch7("couch7");
-				setClassNameCouch8("couch8");
-				setClassNameCouch9("couch9");
-			  }}
-			  onMouseDown={() => {
-				setClassNameCouch("clicked");
-				setClassNameState("clicked");
-				setClassNameCouch3("clicked");
-				setClassNameCouch4("clicked");
-				setClassNameCouch5("clicked");
-				setClassNameCouch6("clicked");
-				setClassNameCouch7("clicked");
-				setClassNameCouch8("clicked");
-				setClassNameCouch9("clicked");
-			  }}
-            className={classNameCouch5}
-            d="M933.6,729.42c0.65-0.3,1.21-0.55,1.71-0.77s0.95-0.43,1.4-0.63h0c-2-1.9-3.99-3.8-5.99-5.71c0,0,0,0,0,0
+            />
+          </Link>
+          <Link to="/mint">
+            <path
+              onMouseOver={() => {
+                setClassNameCouch("hover");
+                setClassNameState("hover");
+                setClassNameCouch3("hover");
+                setClassNameCouch4("hover");
+                setClassNameCouch5("hover");
+                setClassNameCouch6("hover");
+                setClassNameCouch7("hover");
+                setClassNameCouch8("hover");
+                setClassNameCouch9("hover");
+              }}
+              onMouseLeave={() => {
+                setClassNameCouch("couch");
+                setClassNameState("couch2");
+                setClassNameCouch3("couch3");
+                setClassNameCouch4("couch4");
+                setClassNameCouch5("couch5");
+                setClassNameCouch6("couch6");
+                setClassNameCouch7("couch7");
+                setClassNameCouch8("couch8");
+                setClassNameCouch9("couch9");
+              }}
+              onMouseDown={() => {
+                setClassNameCouch("clicked");
+                setClassNameState("clicked");
+                setClassNameCouch3("clicked");
+                setClassNameCouch4("clicked");
+                setClassNameCouch5("clicked");
+                setClassNameCouch6("clicked");
+                setClassNameCouch7("clicked");
+                setClassNameCouch8("clicked");
+                setClassNameCouch9("clicked");
+              }}
+              className={classNameCouch5}
+              d="M933.6,729.42c0.65-0.3,1.21-0.55,1.71-0.77s0.95-0.43,1.4-0.63h0c-2-1.9-3.99-3.8-5.99-5.71c0,0,0,0,0,0
 		C931.68,724.67,932.64,727.04,933.6,729.42z"
-          />
-		  </Link>
+            />
+          </Link>
           <path
             className="st17"
             d="M929.41,721.48c0.46,0.29,0.91,0.58,1.37,0.86"
@@ -18235,7 +18433,7 @@ function Cafe() {
             d="M785.41,213.49c-0.01,0.01-0.01,0.01-0.02,0.02C785.4,213.5,785.4,213.49,785.41,213.49L785.41,213.49
 		C785.41,213.49,785.41,213.48,785.41,213.49L785.41,213.49C785.41,213.48,785.41,213.48,785.41,213.49z"
           />
-          
+
           <path
             className="st8"
             d="M785.3,213.57C785.28,213.59,785.27,213.6,785.3,213.57L785.3,213.57z"

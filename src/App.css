@@ -254,6 +254,19 @@ html {
   fill: #e7b805;
 }
 
+.digitalax {
+  font-size: 10px;
+  cursor: pointer;
+}
+
+a:visited {
+  color: #ba180a
+}
+
+a:active {
+  color:#e7b805;
+}
+
 .st3 {
   fill: #b9a2c8;
 }
