@@ -4,7 +4,7 @@
 }
 
 html {
-  background: #B3E2F2;
+  background: #b3e2f2;
 }
 
 .leaflet-container {
@@ -13,12 +13,11 @@ html {
   position: absolute;
   top: 0px;
 
-
-  background: url('./assets/SKY-BG.png') 200%;
+  background: url("./assets/SKY-BG.png") 200%;
 }
 
 .leaflet-popup-content-wrapper {
-  background: #BA180A;
+  background: #ba180a;
   color: white;
   box-shadow: 0 3px 14px #ba272766;
 }
@@ -28,26 +27,26 @@ html {
 }
 
 .leaflet-container a.leaflet-popup-close-button:hover {
-  color: #E7B805;
+  color: #e7b805;
 }
 
 .leaflet-container a.leaflet-popup-close-button {
-  color: #E7B805;
+  color: #e7b805;
 }
 
 .leaflet-popup-tip {
-  background: #BA180A;
+  background: #ba180a;
 }
 
 .leaflet-popup-content {
   text-align: center;
-  font-family: 'LoRes';
+  font-family: "LoRes";
 }
 
 .nav {
   /* width: 100%; */
   height: 3rem;
-  top: 0; 
+  top: 0;
   left: 0;
   z-index: 30;
   padding: 0.5rem;
@@ -57,21 +56,22 @@ html {
 }
 
 .leaflet-bar a.leaflet-disabled {
-  background-color: #BA180A;
+  background-color: #ba180a;
   color: white;
 }
 
-.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
   border: none;
 }
 
 .leaflet-bar a {
-  background-color: #BA180A;
+  background-color: #ba180a;
   color: white;
 }
 
 .leaflet-bar a:hover {
-  background-color: #E7B805;
+  background-color: #e7b805;
   color: white;
 }
 
@@ -96,41 +96,52 @@ html {
   height: fit-content;
   display: block;
   position: absolute;
-  background-color: #BA180A;
+  background-color: #ba180a;
   bottom: 1rem;
-  font-family: 'LoRes';
-  cursor:grab;
+  font-family: "LoRes";
+  cursor: grab;
   visibility: visible;
-
 }
 
-@media (max-width: 640px) { 
+@media (max-width: 640px) {
   .markerInfo {
     width: fit-content;
   }
 }
 
-
 .invisible {
   visibility: hidden;
 }
 
-
-
 .infoTitle {
-  color:#E7B805;
+  color: #e7b805;
 }
 
 .infoDescription {
   color: white;
 }
 
+.cafe {
+  width: 100vw;
+  margin-top: 50px;
+  position: relative;
+  left: -8px;
+}
+
+.Main {
+  min-height: 100vh;
+}
 
 .footer {
-  font-family: 'LoRes';
+  font-family: "LoRes";
   text-align: center;
-  margin-top: 1rem;
+  width: 100%;
+  height: 10vh;
   color: white;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  bottom: 0px;
 }
 
 .twitter {
@@ -145,20 +156,21 @@ html {
   top: 15px;
   right: 10px;
   cursor: pointer;
-  text-align:center;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .enterButton {
-  font-family: 'LoRes';
-  color:#BA180A;
-  background:#E7B805;
+  font-family: "LoRes";
+  color: #ba180a;
+  background: #e7b805;
   border: none;
-  width: 30%;
+  width: fit-content;
   height: 30px;
   margin-top: 0.5rem;
+  white-space: "no-wrap";
 }
 
 .enterButton:hover {
@@ -166,9 +178,166 @@ html {
   cursor: pointer;
 }
 
-
-@media (max-width: 780px) { 
+@media (max-width: 780px) {
   .enterButton {
     width: fit-content;
   }
+}
+
+.st0 {
+  fill: none;
+}
+.st1 {
+  fill: #fefefe;
+}
+.st2 {
+  fill: #012000;
+}
+
+.couch {
+  fill: #012000;
+}
+
+.couch2 {
+  fill: #51519b;
+}
+
+/* .couch3 {
+  fill: 
+} */
+
+.hover {
+  fill: #ba180a;
+}
+
+.clicked {
+  fill: #e7b805;
+}
+
+.st3 {
+  fill: #b9a2c8;
+}
+.st4 {
+  fill: #b7a0c6;
+}
+.st5 {
+  fill: #6a537b;
+}
+.st6 {
+  fill: none;
+  stroke: #b9a2c8;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st7 {
+  fill: #c9b3d5;
+}
+.st8 {
+  fill: #bda6cb;
+}
+.st9 {
+  fill: #d1c0dc;
+}
+.st10 {
+  fill: #fee4fe;
+}
+.st11 {
+  fill: #c4add1;
+}
+.st12 {
+  fill: #ebd5ef;
+}
+.st13 {
+  fill: #8e749c;
+}
+
+.st14 {
+  fill: #867295;
+}
+.st15 {
+  fill: #ddc3ed;
+}
+.st16 {
+  fill: #765e87;
+}
+.st17 {
+  fill: none;
+  stroke: #ebd5ef;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st18 {
+  fill: none;
+  stroke: #6a537b;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st19 {
+  fill: none;
+  stroke: #bda6cb;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st20 {
+  fill: none;
+  stroke: #b7a0c6;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st21 {
+  fill: none;
+  stroke: #fee4fe;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st22 {
+  fill: none;
+  stroke: #c9b3d5;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st23 {
+  fill: none;
+  stroke: #c4add1;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st24 {
+  fill: none;
+  stroke: #867295;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st25 {
+  fill: none;
+  stroke: #d1c0dc;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st26 {
+  fill: none;
+  stroke: #8e749c;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st27 {
+  fill: none;
+  stroke: #012000;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st28 {
+  fill: #51519b;
 }
