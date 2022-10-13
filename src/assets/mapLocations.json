@@ -25,11 +25,11 @@
     },
     {
         "id": "4",
-        "name": "Floatown",
+        "name": "Unknown",
         "description": "We all float here! Discover hidden art galleries and claimable pieces.",
         "latitude": 69.88447206606486,
         "longitude": 97.73437500000001,
-        "link": "/gallery"
+        "link": "/Unknown"
     },
     {
         "id": "5",
