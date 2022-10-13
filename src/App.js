@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Gallery from "./pages/Gallery";
+import Questions from "./pages/Questions";
 import Hotel from "./pages/Hotel";
 import Unknown from "./pages/Unknown";
 import Slide from "./pages/Slide";
@@ -15,9 +15,9 @@ function App() {
     <div className="Main">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="Gallery" element={<Gallery />} />
+        <Route path="Unknown" element={<Unknown />} />
         <Route path="Hotel" element={<Hotel />} />
-        <Route path="???" element={<Unknown />} />
+        <Route path="???" element={<Questions />} />
         <Route path="Longbridge" element={<Longbridge />} />
         <Route path="Slide" element={<Slide />} />
         <Route path="Cafe" element={<Cafe />} />

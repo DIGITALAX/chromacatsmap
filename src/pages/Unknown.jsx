@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Unknown() {
+function Gallery() {
   return (
     <div className='under'>
     Under Construction :3
@@ -8,4 +8,4 @@ function Unknown() {
   )
 }
 
-export default Unknown
+export default Gallery
