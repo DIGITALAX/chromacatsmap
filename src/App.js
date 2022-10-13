@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Commons from "./pages/Commons";
 import Gallery from "./pages/Gallery";
 import Hotel from "./pages/Hotel";
 import Unknown from "./pages/Unknown";
@@ -16,7 +15,6 @@ function App() {
     <div className="Main">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="Commons" element={<Commons />} />
         <Route path="Gallery" element={<Gallery />} />
         <Route path="Hotel" element={<Hotel />} />
         <Route path="???" element={<Unknown />} />

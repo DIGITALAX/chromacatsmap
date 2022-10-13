@@ -3,6 +3,11 @@
   src: url(./assets/fonts/LoRes9MinusOTWide-Regular.ttf);
 }
 
+@font-face {
+  font-family: Robot;
+  src: url(./assets/fonts/Robot9000Italic.ttf);
+}
+
 html {
   background: #b3e2f2;
 }
@@ -36,6 +41,16 @@ html {
 
 .leaflet-popup-tip {
   background: #ba180a;
+}
+
+.under {
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  top: 50%;
+  font-family: "Robot";
+  font-size: 50px;
 }
 
 .leaflet-popup-content {

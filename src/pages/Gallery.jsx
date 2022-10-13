@@ -2,8 +2,9 @@ import React from 'react'
 
 function Gallery() {
   return (
-    <div>
-    </div>
+    <div className='under'>
+    Under Construction :3
+  </div>
   )
 }
 

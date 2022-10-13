@@ -2,7 +2,9 @@ import React from 'react'
 
 function Hotel() {
   return (
-    <div></div>
+    <div className='under'>
+    Under Construction :3
+  </div>
   )
 }
 

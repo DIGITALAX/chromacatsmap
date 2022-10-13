@@ -2,7 +2,9 @@ import React from 'react'
 
 function Unknown() {
   return (
-    <div></div>
+    <div className='under'>
+    Under Construction :3
+  </div>
   )
 }
 
