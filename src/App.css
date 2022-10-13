@@ -202,9 +202,34 @@ html {
   fill: #51519b;
 }
 
-/* .couch3 {
-  fill: 
-} */
+.couch3 {
+  fill: none;
+}
+
+.couch4 {
+  fill: #b7a0c6;
+}
+
+.couch5 {
+  fill: #ebd5ef;
+}
+
+.couch6 {
+  fill: #867295
+}
+
+.couch7 {
+  fill: #6a537b
+}
+
+.couch8 {
+  fill: #b9a2c8
+}
+
+.couch9 {
+  fill: #b9a2c8
+}
+
 
 .hover {
   fill: #ba180a;
